@@ -1,15 +1,31 @@
 # Bulk Growth
 
-> Bulk Growth is a performance marketing agency for e-commerce brands, medical and aesthetic clinics, real estate companies, restaurants and SaaS businesses. It plans and runs paid advertising on Meta, Google, TikTok, Snapchat, LinkedIn and ChatGPT Ads, sets up conversion tracking with Google Tag Manager and GA4, and works on SEO and Generative Engine Optimization (GEO). It is led by Mohamed Elmlegey, a senior media buyer who has managed paid media since 2022.
+> Bulk Growth is a performance marketing agency that plans and runs paid advertising on Meta, Google, TikTok, Snapchat, LinkedIn and ChatGPT Ads, sets up conversion tracking with Google Tag Manager and GA4, and works on SEO and Generative Engine Optimization (GEO). It serves e-commerce brands, clinics, real estate and SaaS companies across the GCC, Europe and the USA. It is led by Mohamed Elmlegey, a senior media buyer.
 
-- Markets: Qatar, Saudi Arabia, UAE, Kuwait, Egypt, plus campaigns in the USA, UK, Germany and France
-- Languages: English and Arabic
-- Contact: WhatsApp +20 104 066 6433 · mohamedelmlegey10@gmail.com · Instagram @bulk.growth
+- Book a 30-minute consultation ($50): https://bulkgrowth.github.io/#consult
+- WhatsApp: +20 104 066 6433 · Instagram: @bulk.growth
 
-## Pages
+## Services
 
-- [Home](https://bulkgrowth.github.io/): services, tracking, results by industry, process, FAQ and contact
-- [Services](https://bulkgrowth.github.io/#services): performance marketing, ChatGPT Ads, tracking and analytics, SEO and GEO, media production, design, page management
-- [Tracking](https://bulkgrowth.github.io/#tracking): what is tracked for e-commerce, lead generation, WhatsApp and mobile apps
-- [Results](https://bulkgrowth.github.io/#results): results by industry
-- [FAQ](https://bulkgrowth.github.io/#faq): common questions from clients
+- [Meta Ads](https://bulkgrowth.github.io/services/meta-ads/): Facebook and Instagram Ads management focused on sales and qualified leads: account structure, Conversions API, creative testing and scaling for GCC, EU and US brands.
+- [Google Ads](https://bulkgrowth.github.io/services/google-ads/): Google Ads management for high-intent leads and online sales: Search, Shopping, Performance Max and YouTube, with conversion tracking and negative keyword control.
+- [TikTok & Snapchat Ads](https://bulkgrowth.github.io/services/tiktok-snapchat-ads/): TikTok and Snapchat Ads management for brands in Saudi Arabia, the UAE, Kuwait and Qatar: native creatives, pixel and Events API tracking, and scaling what converts.
+- [Conversion Tracking](https://bulkgrowth.github.io/services/tracking/): Google Tag Manager, GA4 and Conversions API setup for online stores, lead forms, WhatsApp and mobile apps, so every ad platform optimizes for real sales and leads.
+- [ChatGPT Ads](https://bulkgrowth.github.io/services/chatgpt-ads/): Run sponsored placements next to ChatGPT answers where shoppers ask what to buy. Setup, tracking and testing against your Meta and Google results.
+- [SEO & GEO](https://bulkgrowth.github.io/services/seo-geo/): SEO and Generative Engine Optimization (GEO) so your brand ranks on Google and is recommended by ChatGPT, Gemini, Perplexity and Google AI Overviews.
+
+## Industries
+
+- [E-commerce](https://bulkgrowth.github.io/industries/ecommerce/): Paid ads and tracking for online stores on Shopify, Salla, Zid and WooCommerce: profitable ROAS, lower cost per purchase and scaling without losing margin.
+- [Clinics](https://bulkgrowth.github.io/industries/clinics/): Patient acquisition for dental, dermatology, laser and aesthetic clinics: WhatsApp and lead-form campaigns on Meta, TikTok and Snapchat, tracked to booked appointments.
+- [Real Estate](https://bulkgrowth.github.io/industries/real-estate/): Real estate lead generation on Meta, Google, TikTok and Snapchat: qualified buyer leads, CRM tracking and funnels from first inquiry to site visit and sale.
+
+## Articles
+
+- [How to track WhatsApp leads from your ads](https://bulkgrowth.github.io/blog/track-whatsapp-leads/): A practical guide to tracking WhatsApp leads from ads: button clicks, conversations, source codes, and sending qualified leads and sales back to Meta.
+- [Meta Ads vs Google Ads: which one should you use?](https://bulkgrowth.github.io/blog/meta-vs-google-ads/): Meta Ads vs Google Ads compared: demand creation vs demand capture, which works for e-commerce, clinics and real estate, and how to split your budget.
+- [What is GEO, and how do brands get recommended by ChatGPT?](https://bulkgrowth.github.io/blog/what-is-geo/): Generative Engine Optimization (GEO) explained: how ChatGPT, Gemini, Perplexity and Google AI Overviews choose brands to mention, and what to do so yours is one of them.
+
+## Company
+
+- [About Bulk Growth](https://bulkgrowth.github.io/about/): who we are, how we work, and who leads the agency
