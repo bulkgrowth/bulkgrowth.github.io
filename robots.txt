@@ -1,0 +1,14 @@
+# Bulk Growth — robots.txt
+# Everything public is open to search engines and AI search/answer crawlers.
+# This is a marketing site: being read by Google, Bing, ChatGPT search, Perplexity
+# and Gemini is the goal. To opt out of AI *training* only (not search), add for example:
+#   User-agent: GPTBot
+#   Disallow: /
+#   User-agent: Google-Extended
+#   Disallow: /
+# Keep OAI-SearchBot, ChatGPT-User and PerplexityBot allowed so answers can still cite the site.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://bulkgrowth.github.io/sitemap.xml

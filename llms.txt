@@ -1,0 +1,15 @@
+# Bulk Growth
+
+> Bulk Growth is a performance marketing agency for e-commerce brands, medical and aesthetic clinics, real estate companies, restaurants and SaaS businesses. It plans and runs paid advertising on Meta, Google, TikTok, Snapchat, LinkedIn and ChatGPT Ads, sets up conversion tracking with Google Tag Manager and GA4, and works on SEO and Generative Engine Optimization (GEO). It is led by Mohamed Elmlegey, a senior media buyer who has managed paid media since 2022.
+
+- Markets: Qatar, Saudi Arabia, UAE, Kuwait, Egypt, plus campaigns in the USA, UK, Germany and France
+- Languages: English and Arabic
+- Contact: WhatsApp +20 104 066 6433 · mohamedelmlegey10@gmail.com · Instagram @bulk.growth
+
+## Pages
+
+- [Home](https://bulkgrowth.github.io/): services, tracking, results by industry, process, FAQ and contact
+- [Services](https://bulkgrowth.github.io/#services): performance marketing, ChatGPT Ads, tracking and analytics, SEO and GEO, media production, design, page management
+- [Tracking](https://bulkgrowth.github.io/#tracking): what is tracked for e-commerce, lead generation, WhatsApp and mobile apps
+- [Results](https://bulkgrowth.github.io/#results): results by industry
+- [FAQ](https://bulkgrowth.github.io/#faq): common questions from clients
