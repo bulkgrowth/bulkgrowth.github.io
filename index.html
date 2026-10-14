@@ -344,7 +344,7 @@
      "name": "What happens in the $50 consultation?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "It is a 30-minute video call about your business. You answer a short form first, we review your ads, funnel and tracking before the call, and in the call we show you the biggest problems costing you money and the quickest fixes. You get a short written summary afterwards."
+      "text": "It is a 30-minute video call about your business. You answer a short form and pick a time in our calendar, we review your ads, funnel and tracking before the call, and in the call we show you the biggest problems costing you money and the quickest fixes. You get a short written summary afterwards."
      }
     },
     {
@@ -352,7 +352,7 @@
      "name": "How do I pay for the consultation?",
      "acceptedAnswer": {
       "@type": "Answer",
-      "text": "After you book, we confirm a time on WhatsApp and send you a secure invoice for $50. You can pay it by bank transfer in USD (ACH or wire) or EUR (SEPA) from anywhere. The call is booked once the payment arrives."
+      "text": "After you pick a time in our calendar, we send you a secure invoice for $50 on WhatsApp. You can pay it by bank transfer in USD (ACH or wire) or EUR (SEPA) from anywhere. The call is booked once the payment arrives."
      }
     },
     {
@@ -486,6 +486,8 @@ fieldset.field legend{font-size:.9rem;color:var(--muted);padding:0;margin-bottom
 .checks label{display:inline-flex;align-items:center;gap:.45rem;border:1px solid var(--line);border-radius:999px;padding:.4rem .8rem;font-size:.9rem;cursor:pointer;background:var(--ink)}
 .checks input{width:auto;accent-color:var(--lime);margin:0}
 .checks label:has(input:checked){border-color:var(--lime);color:var(--lime)}
+.booked{border:1px solid color-mix(in srgb,var(--lime) 50%,var(--line));border-radius:12px;padding:1rem 1.1rem;background:var(--ink);display:grid;gap:.4rem}
+.booked a{color:var(--lime)}
 
 /* service help */
 .chip-btn{font:inherit;font-weight:600;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;background:transparent;cursor:pointer;transition:border-color .2s,color .2s,background .2s}
@@ -730,9 +732,9 @@ footer{border-top:1px solid var(--line);padding-block:3rem 2rem}
       <p class="help-sub">How it works</p>
       <ol class="help-steps">
         <li>Fill in the form. It takes about 2 minutes.</li>
-        <li>We confirm a time on WhatsApp and send you a secure invoice for $50.</li>
-        <li>Pay by bank transfer in USD or EUR from anywhere.</li>
-        <li>We review your answers and accounts before the call.</li>
+        <li>Pick a time in our calendar. You get a confirmation email and a Google Meet link.</li>
+        <li>We send you a secure $50 invoice on WhatsApp, payable by bank transfer in USD or EUR.</li>
+        <li>You get email reminders 24 hours and 1 hour before the call.</li>
         <li>We meet for 30 minutes and you leave with a plan.</li>
       </ol>
     </div>
@@ -781,10 +783,17 @@ footer{border-top:1px solid var(--line);padding-block:3rem 2rem}
       <div class="field"><label for="c-track">Do you track sales or leads from your ads?</label>
         <select id="c-track" name="track"><option>Yes, fully</option><option>Partly</option><option>No</option><option>Not sure</option></select></div>
       <div class="field"><label for="c-more">Anything we should know before the call?</label><textarea id="c-more" name="more" placeholder="e.g. ROAS dropped from 4x to 2x since last month"></textarea></div>
-      <div class="field"><label for="c-time">Best days and times for you</label><input id="c-time" name="time" placeholder="e.g. Sun–Tue, after 6 pm"></div>
-      <p class="err" id="consultErr" hidden>Add your name so we know who to reply to.</p>
-      <button class="btn btn-primary" type="submit">Book my $50 consultation</button>
-      <p class="form-hint">This opens WhatsApp with your answers. We reply with a time and a $50 invoice, payable by bank transfer in USD or EUR. Nothing is charged until you confirm.</p>
+      <div class="row2">
+        <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" required autocomplete="email" placeholder="you@company.com"></div>
+        <div class="field"><label for="c-wa">WhatsApp number</label><input id="c-wa" name="wa" type="tel" required autocomplete="tel" placeholder="+971 50 123 4567"></div>
+      </div>
+      <p class="err" id="consultErr" hidden>Add your name, email and WhatsApp number so we can confirm your booking.</p>
+      <button class="btn btn-primary" type="submit">Choose a time · $50</button>
+      <p class="form-hint">Next, our calendar opens so you can pick a time. We then send a $50 invoice on WhatsApp, payable by bank transfer in USD or EUR. Nothing is charged until you confirm.</p>
+      <div class="booked" id="consultDone" hidden>
+        <p><b>Your calendar is open in a new tab.</b> Pick a time there to confirm your call.</p>
+        <p class="form-hint">Didn't open? <a id="calLink" href="https://cal.com/bulkgrowth/consultation" target="_blank" rel="noopener">Open the booking calendar</a> or <a class="js-wa" data-msg="contact" data-loc="consult_fallback" href="https://wa.me/201040666433" target="_blank" rel="noopener">message us on WhatsApp</a>.</p>
+      </div>
     </form>
   </div>
 </section>
@@ -1041,8 +1050,8 @@ footer{border-top:1px solid var(--line);padding-block:3rem 2rem}
       <details><summary>Who owns the ad accounts and the tracking setup?</summary><p>You do. Ad accounts, tracking and analytics stay in your business, and we work in them with access permissions.</p></details>
       <details><summary>Do you work with international clients?</summary><p>Yes. We work remotely with brands in the GCC, Egypt, Europe and the USA, in English and Arabic. Communication runs on WhatsApp and video calls, and reporting is shared through a live dashboard.</p></details>
       <details><summary>How do you measure success?</summary><p>We agree on business numbers before launch: return on ad spend and cost per purchase for online stores, cost per qualified lead and closed deals for lead generation. Clicks and reach are tracked, but they are not the goal.</p></details>
-      <details><summary>What happens in the $50 consultation?</summary><p>It is a 30-minute video call about your business. You answer a short form first, we review your ads, funnel and tracking before the call, and in the call we show you the biggest problems costing you money and the quickest fixes. You get a short written summary afterwards.</p></details>
-      <details><summary>How do I pay for the consultation?</summary><p>After you book, we confirm a time on WhatsApp and send you a secure invoice for $50. You can pay it by bank transfer in USD (ACH or wire) or EUR (SEPA) from anywhere. The call is booked once the payment arrives.</p></details>
+      <details><summary>What happens in the $50 consultation?</summary><p>It is a 30-minute video call about your business. You answer a short form and pick a time in our calendar, we review your ads, funnel and tracking before the call, and in the call we show you the biggest problems costing you money and the quickest fixes. You get a short written summary afterwards.</p></details>
+      <details><summary>How do I pay for the consultation?</summary><p>After you pick a time in our calendar, we send you a secure invoice for $50 on WhatsApp. You can pay it by bank transfer in USD (ACH or wire) or EUR (SEPA) from anywhere. The call is booked once the payment arrives.</p></details>
       <details><summary>How does pricing work?</summary><p>A monthly management fee based on ad spend, channels and services. Tracking setups are quoted as a one-time project. Message us on WhatsApp for a detailed quote.</p></details>
     </div>
   </div>
@@ -1441,34 +1450,37 @@ document.querySelectorAll("dialog.help").forEach(d => {
   d.addEventListener("close", () => { if (lastTrigger) lastTrigger.focus({ preventScroll: true }); });
 });
 
-/* --- consultation form → dataLayer → WhatsApp --- */
+/* --- consultation form → dataLayer → Cal.com booking (answers prefilled) --- */
+const CAL_URL = "https://cal.com/bulkgrowth/consultation";
 document.getElementById("consultForm").addEventListener("submit", e => {
   e.preventDefault();
   const f = e.target, F = n => f.elements.namedItem(n), V = n => ((F(n) && F(n).value) || "").trim(), err = document.getElementById("consultErr");
-  if (!V("name")) { err.hidden = false; F("name").focus(); return; }
+  const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(V("email"));
+  if (!V("name") || !emailOk || V("wa").replace(/\D/g, "").length < 7) {
+    err.hidden = false; (!V("name") ? F("name") : !emailOk ? F("email") : F("wa")).focus(); return;
+  }
   err.hidden = true;
   const channels = [...f.querySelectorAll('input[name="channels"]:checked')].map(x => x.value).join(", ") || "-";
   track("generate_lead", Object.assign({ form_id: "consultation_50", value: 50, currency: "USD",
     business_type: V("type"), country: V("country"), budget: V("budget"), problem: V("problem"), event_id: eventId() }, SOURCE));
   const lines = [
-    "Hello Bulk Growth! I'd like to book the 30-minute consultation ($50).",
-    "",
-    "Name: " + V("name"),
-    "Business: " + (V("biz") || "-"),
+    "WhatsApp: " + V("wa"),
+    "Business: " + (V("biz") || "-") + " | " + V("type"),
     "Link: " + (V("link") || "-"),
-    "Type: " + V("type"),
     "Country: " + V("country"),
     "Monthly ad budget: " + V("budget"),
     "Main goal: " + V("goal"),
     "Advertising on: " + channels,
     "Biggest problem: " + V("problem"),
-    "Tracking: " + V("track"),
-    "Best time: " + (V("time") || "-")
+    "Tracking: " + V("track")
   ];
   if (V("more")) lines.push("Notes: " + V("more"));
   if (srcCode()) lines.push("Source:" + srcCode());
+  const url = CAL_URL + "?" + new URLSearchParams({ name: V("name"), email: V("email"), notes: lines.join("\n") }).toString();
+  document.getElementById("calLink").href = url;
+  document.getElementById("consultDone").hidden = false;
   const a = document.createElement("a");
-  a.href = waLink(lines.join("\n")); a.target = "_blank"; a.rel = "noopener";
+  a.href = url; a.target = "_blank"; a.rel = "noopener";
   document.body.appendChild(a); a.click(); a.remove();
 });
 
