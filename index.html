@@ -693,6 +693,23 @@ footer{border-top:1px solid var(--line);padding-block:3rem 2rem}
 .gpt-mock figcaption{font-size:.75rem;color:#8e8e8e;padding:0 1.2rem 1rem}
 @media (max-width:900px){.gpt-grid{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.gpt-new,.gm-ad{animation:none}}
+.has-sub{position:relative}
+.sub-btn{font:inherit;font-size:.93rem;color:var(--muted);background:none;border:0;padding:0;cursor:pointer;display:inline-flex;align-items:center;gap:.35rem}
+.sub-btn:hover,.sub-btn[aria-expanded="true"]{color:var(--text)}
+.sub-btn svg{transition:transform .2s}.sub-btn[aria-expanded="true"] svg{transform:rotate(180deg)}
+.sub{list-style:none;margin:0;padding:.4rem;position:absolute;top:calc(100% + .9rem);left:-1rem;min-width:240px;background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:0 20px 50px -10px rgba(0,0,0,.6);z-index:60}
+.sub:not(.open){display:none}
+.sub a{display:flex!important;align-items:center;gap:.65rem;padding:.65rem .75rem!important;border-radius:9px;border-top:0!important;color:var(--soft)!important}
+.sub a:hover{background:color-mix(in srgb,var(--lime) 10%,transparent);color:var(--text)!important}
+.pl{width:10px;height:10px;border-radius:50%;background:var(--muted);flex:0 0 10px}
+.pl-meta{background:#0866ff}.pl-google{background:conic-gradient(#ea4335 0 25%,#fbbc05 0 50%,#34a853 0 75%,#4285f4 0)}.pl-tiktok{background:linear-gradient(135deg,#25f4ee 50%,#fe2c55 50%)}.pl-snap{background:#fffc00}
+@media (max-width:980px){.sub-btn{width:100%;justify-content:space-between;padding-block:.9rem;border-top:1px solid var(--line);font-size:1rem}.sub{position:static;box-shadow:none;border:0;background:transparent;padding:0 0 .6rem .4rem;min-width:0}.sub a{padding:.75rem .6rem!important}}
+.ptabs{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1.6rem}
+.ptab{border:1px solid var(--line);border-radius:999px;padding:.5rem 1rem;color:var(--soft);text-decoration:none;font-size:.9rem}
+.ptab:hover{border-color:var(--lime)}.ptab.on{background:var(--lime);color:#07111f;border-color:var(--lime);font-weight:600}
+.gallery.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:900px){.gallery.g3{grid-template-columns:1fr 1fr}}@media (max-width:600px){.gallery.g3{grid-template-columns:1fr}}
+.shot figcaption a{color:var(--lime)}
 </style>
 </head>
 <body>
@@ -709,7 +726,14 @@ footer{border-top:1px solid var(--line);padding-block:3rem 2rem}
       <li><a href="#chatgpt-ads">ChatGPT Ads</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#tracking">Tracking</a></li>
-      <li><a href="/case-studies/">Case studies</a></li>
+      <li class="has-sub"><button type="button" class="sub-btn" aria-expanded="false" aria-controls="subResults">Results <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <ul class="sub" id="subResults">
+          <li><a href="/results/meta/"><i class="pl pl-meta" aria-hidden="true"></i>Meta Ads results</a></li>
+          <li><a href="/results/google/"><i class="pl pl-google" aria-hidden="true"></i>Google Ads results</a></li>
+          <li><a href="/results/tiktok/"><i class="pl pl-tiktok" aria-hidden="true"></i>TikTok Ads results</a></li>
+          <li><a href="/results/snapchat/"><i class="pl pl-snap" aria-hidden="true"></i>Snapchat Ads results</a></li>
+          <li><a href="/case-studies/"><i class="pl" aria-hidden="true"></i>All results by client</a></li>
+        </ul></li>
       <li><a href="#ai-search">AI search</a></li>
       <li><a href="#about">About us</a></li>
       <li><a href="#faq">FAQ</a></li>
@@ -1478,6 +1502,8 @@ document.querySelectorAll(".copy").forEach(b => b.addEventListener("click", () =
 }));
 function sel(el){ const r=document.createRange(); r.selectNodeContents(el); const s=getSelection(); s.removeAllRanges(); s.addRange(r); }
 
+document.querySelectorAll(".sub-btn").forEach(function(b){var m=document.getElementById(b.getAttribute("aria-controls"));b.addEventListener("click",function(e){e.stopPropagation();var o=m.classList.toggle("open");b.setAttribute("aria-expanded",o)});});
+document.addEventListener("click",function(e){document.querySelectorAll(".sub.open").forEach(function(m){if(!m.parentNode.contains(e.target)){m.classList.remove("open");var b=m.parentNode.querySelector(".sub-btn");b&&b.setAttribute("aria-expanded","false")}})});
 const menuBtn = document.getElementById("menuBtn"), links = document.getElementById("links");
 menuBtn.addEventListener("click", () => { const o = links.classList.toggle("open"); menuBtn.setAttribute("aria-expanded", o); });
 links.addEventListener("click", e => { if (e.target.tagName === "A") { links.classList.remove("open"); menuBtn.setAttribute("aria-expanded","false"); } });

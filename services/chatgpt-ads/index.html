@@ -33,7 +33,14 @@
     <ul class="links" id="links">
       <li><a href="/services/">Services</a></li>
       <li><a href="/industries/">Industries</a></li>
-      <li><a href="/case-studies/">Case studies</a></li>
+      <li class="has-sub"><button type="button" class="sub-btn" aria-expanded="false" aria-controls="subResults">Results <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+        <ul class="sub" id="subResults">
+          <li><a href="/results/meta/"><i class="pl pl-meta" aria-hidden="true"></i>Meta Ads results</a></li>
+          <li><a href="/results/google/"><i class="pl pl-google" aria-hidden="true"></i>Google Ads results</a></li>
+          <li><a href="/results/tiktok/"><i class="pl pl-tiktok" aria-hidden="true"></i>TikTok Ads results</a></li>
+          <li><a href="/results/snapchat/"><i class="pl pl-snap" aria-hidden="true"></i>Snapchat Ads results</a></li>
+          <li><a href="/case-studies/"><i class="pl" aria-hidden="true"></i>All results by client</a></li>
+        </ul></li>
       <li><a href="/blog/">Blog</a></li>
       <li><a href="/about/">About</a></li>
       <li><a href="/#faq">FAQ</a></li>
@@ -111,6 +118,8 @@
     a.href="https://wa.me/"+WA+"?text="+encodeURIComponent(msg+code);
     a.addEventListener("click",function(){window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:"whatsapp_click",button_location:a.dataset.loc||"page",page_path:location.pathname,event_id:Date.now().toString(36)})});
   });
+document.querySelectorAll(".sub-btn").forEach(function(b){var m=document.getElementById(b.getAttribute("aria-controls"));b.addEventListener("click",function(e){e.stopPropagation();var o=m.classList.toggle("open");b.setAttribute("aria-expanded",o)});});
+document.addEventListener("click",function(e){document.querySelectorAll(".sub.open").forEach(function(m){if(!m.parentNode.contains(e.target)){m.classList.remove("open");var b=m.parentNode.querySelector(".sub-btn");b&&b.setAttribute("aria-expanded","false")}})});
   var b=document.getElementById("menuBtn"),l=document.getElementById("links");
   if(b)b.addEventListener("click",function(){var o=l.classList.toggle("open");b.setAttribute("aria-expanded",o)});
   document.getElementById("yr").textContent=new Date().getFullYear();
