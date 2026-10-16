@@ -53,6 +53,7 @@
   <p class="meta-line">By <a href="/about/" style="color:inherit">Mohamed Elmlegey</a> · Published 2026-10-14 · 6 min read</p>
   
   
+  
 </div></section>
 <section style="padding-top:clamp(2.5rem,6vw,4rem)"><div class="wrap article">
   <article class="prose">
@@ -109,7 +110,7 @@
         <p class="tagline">We don't run ads.<br>We engineer <span class="hl">growth.</span></p></div>
       <div><h4>Services</h4><ul><li><a href="/services/meta-ads/">Meta Ads</a></li><li><a href="/services/google-ads/">Google Ads</a></li><li><a href="/services/tiktok-snapchat-ads/">TikTok &amp; Snapchat Ads</a></li><li><a href="/services/tracking/">Conversion Tracking</a></li><li><a href="/services/chatgpt-ads/">ChatGPT Ads</a></li><li><a href="/services/seo-geo/">SEO &amp; GEO</a></li></ul></div>
       <div><h4>Industries</h4><ul><li><a href="/industries/ecommerce/">E-commerce</a></li><li><a href="/industries/clinics/">Clinics</a></li><li><a href="/industries/real-estate/">Real Estate</a></li></ul></div>
-      <div><h4>Company</h4><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li><li><a href="/blog/">Blog</a></li><li><a href="/#consult">Book a consultation</a></li>
+      <div><h4>Company</h4><ul><li><a href="/about/">About</a></li><li><a href="/case-studies/">Case studies</a></li><li><a href="/growth-strategy/">Growth strategy</a></li><li><a href="/blog/">Blog</a></li><li><a href="/#consult">Book a consultation</a></li>
         <li><a class="js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-loc="footer">WhatsApp</a></li>
         <li><a href="https://instagram.com/bulk.growth" target="_blank" rel="noopener">Instagram</a></li></ul></div>
     </div>
@@ -132,6 +133,21 @@
   var b=document.getElementById("menuBtn"),l=document.getElementById("links");
   if(b)b.addEventListener("click",function(){var o=l.classList.toggle("open");b.setAttribute("aria-expanded",o)});
   document.getElementById("yr").textContent=new Date().getFullYear();
+  var lb=null;
+  document.addEventListener("click",function(ev){
+    var a=ev.target.closest&&ev.target.closest(".shot a,.mthumbs a");
+    if(!a||!window.HTMLDialogElement)return;
+    ev.preventDefault();
+    if(!lb){lb=document.createElement("dialog");lb.className="lb";lb.innerHTML='<button type="button" aria-label="Close">×</button><img alt=""><p></p>';document.body.appendChild(lb);
+      lb.addEventListener("click",function(e){if(e.target===lb||e.target.tagName==="BUTTON")lb.close()});}
+    var im=lb.querySelector("img");im.src=a.getAttribute("href");var t=a.querySelector("img");im.alt=t?t.alt:"";lb.querySelector("p").textContent=t?t.alt:"";
+    lb.showModal();
+  });
+  var fb=document.querySelectorAll(".fbtn");
+  fb.forEach(function(b){b.addEventListener("click",function(){
+    var f=b.dataset.f;fb.forEach(function(x){x.classList.toggle("on",x===b);x.setAttribute("aria-pressed",x===b)});
+    document.querySelectorAll(".ccard").forEach(function(c){c.hidden=!(f==="all"||c.dataset.ind===f)});
+  })});
 })();
 </script>
 </body>
