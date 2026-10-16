@@ -254,7 +254,7 @@
     "@id": "https://bulkgrowth.github.io/#organization"
    },
    "inLanguage": "en",
-   "dateModified": "2026-10-14",
+   "dateModified": "2026-10-16",
    "primaryImageOfPage": {
     "@type": "ImageObject",
     "url": "https://bulkgrowth.github.io/images/og-image.jpg"
@@ -554,6 +554,7 @@ dialog.help[open]{animation:pop .22s cubic-bezier(.2,.7,.2,1)}
 /* results */
 .cases{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
 .case{border:1px solid var(--line);border-radius:16px;padding:1.5rem;display:grid;gap:1rem;align-content:start;background:var(--ink);transition:border-color .25s;min-width:0}
+.case{color:inherit;text-decoration:none}.case-more{color:var(--lime);font-weight:600;font-size:.9rem}.cases-all{margin-top:1.8rem;text-align:center}
 .case:hover{border-color:color-mix(in srgb,var(--lime) 45%,var(--line))}
 .case .meta{display:flex;justify-content:space-between;gap:.6rem;flex-wrap:wrap}
 .case .meta span:last-child{color:var(--muted)}
@@ -674,7 +675,7 @@ footer{border-top:1px solid var(--line);padding-block:3rem 2rem}
       <li><a href="#consult">Consultation</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#tracking">Tracking</a></li>
-      <li><a href="#results">Case studies</a></li>
+      <li><a href="/case-studies/">Case studies</a></li>
       <li><a href="#ai-search">AI search</a></li>
       <li><a href="#about">About us</a></li>
       <li><a href="#faq">FAQ</a></li>
@@ -912,61 +913,44 @@ footer{border-top:1px solid var(--line);padding-block:3rem 2rem}
       <p>Since 2022 we've run campaigns for brands across the GCC, Europe and the USA, in e-commerce, clinics, real estate, restaurants, tourism and SaaS. Many accounts stay confidential at the client's request.</p>
     </div>
     <div class="cases">
-      <article class="case">
-        <div class="meta"><span>E-commerce &amp; retail</span></div>
-        <div class="big">Up to 30x<small>return on ad spend for fashion, lifestyle and consumer goods brands</small></div>
-        <ul class="ticks">
-          <li>Millions of dollars in ad spend managed</li>
-          <li>Thousands of online orders every month</li>
-          <li>Cost per purchase cut by up to 70%</li>
-        </ul>
-      </article>
-      <article class="case">
-        <div class="meta"><span>Medical &amp; aesthetic clinics</span></div>
-        <div class="big">70K+<small>patient conversations and booking requests</small></div>
-        <ul class="ticks">
-          <li>Hundreds of new leads per clinic every month</li>
-          <li>Cost per lead under $1 on top campaigns</li>
-          <li>Up to 80% of chats booked an appointment</li>
-        </ul>
-      </article>
-      <article class="case">
-        <div class="meta"><span>Real estate &amp; construction</span></div>
-        <div class="big">80%<small>of qualified leads closed into deals</small></div>
-        <ul class="ticks">
-          <li>Multi-million ad budgets managed</li>
-          <li>Up to 12.5x return on ad spend</li>
-          <li>Funnels from first lead to site visit to sale</li>
-        </ul>
-      </article>
-      <article class="case">
-        <div class="meta"><span>Restaurants &amp; cafés</span></div>
-        <div class="big">4.6x<small>monthly revenue growth in 3 months</small></div>
-        <ul class="ticks">
-          <li>3–5x more orders from WhatsApp and Instagram</li>
-          <li>Small budgets turned into steady daily orders</li>
-          <li>Monthly offer campaigns that sell out</li>
-        </ul>
-      </article>
-      <article class="case">
-        <div class="meta"><span>Tourism &amp; hospitality</span></div>
-        <div class="big">+200%<small>bookings and inquiries on top campaigns</small></div>
-        <ul class="ticks">
-          <li>Thousands of booking leads per season</li>
-          <li>Hotels, resorts and travel packages</li>
-          <li>Campaigns built around booking, not likes</li>
-        </ul>
-      </article>
-      <article class="case">
-        <div class="meta"><span>SaaS &amp; tech</span></div>
-        <div class="big">200<small>qualified B2B leads in 30 days</small></div>
-        <ul class="ticks">
-          <li>High-intent Google Search and call ads</li>
-          <li>Lower cost per activation</li>
-          <li>Funnels built for retention and lifetime value</li>
-        </ul>
-      </article>
+      <a class="case" href="/case-studies/qatar-clinic-group-meta-ads/">
+        <div class="meta"><span>Clinics · Qatar</span></div>
+        <div class="big">74,840<small>patient conversations at 4.66 QAR each across two clinic brands</small></div>
+        <ul class="ticks"><li>Best treatment campaign: 0.60 QAR per conversation</li><li>348,388 QAR managed on Meta</li><li>Campaigns split by treatment</li></ul>
+        <span class="case-more">Read the case study →</span>
+      </a>
+      <a class="case" href="/case-studies/egypt-ecommerce-meta-ads-roas/">
+        <div class="meta"><span>E-commerce · Egypt</span></div>
+        <div class="big">6.1x<small>ROAS: EGP 10.6M in tracked sales from EGP 1.74M spend</small></div>
+        <ul class="ticks"><li>10,879 website purchases</li><li>Top campaign returned 14.83x</li><li>10.56x held on EGP 100K+ spend</li></ul>
+        <span class="case-more">Read the case study →</span>
+      </a>
+      <a class="case" href="/case-studies/doctor-led-aesthetic-clinic-qatar/">
+        <div class="meta"><span>Aesthetic clinic · Qatar</span></div>
+        <div class="big">+129%<small>monthly conversations in 3 months, with cost per conversation down 28%</small></div>
+        <ul class="ticks"><li>Clinic + doctor personal-brand accounts</li><li>Meta, TikTok and Snapchat</li><li>855 Snapchat leads</li></ul>
+        <span class="case-more">Read the case study →</span>
+      </a>
+      <a class="case" href="/case-studies/qatar-medical-center-tiktok-meta-snapchat/">
+        <div class="meta"><span>Medical center · Qatar</span></div>
+        <div class="big">−28%<small>lower cost per conversation on TikTok than on Meta</small></div>
+        <ul class="ticks"><li>30,000+ patient conversations</li><li>567,375 QAR managed</li><li>410 Snapchat leads at $6.66</li></ul>
+        <span class="case-more">Read the case study →</span>
+      </a>
+      <a class="case" href="/case-studies/kuwait-real-estate-leads/">
+        <div class="meta"><span>Real estate · Kuwait</span></div>
+        <div class="big">12.5x<small>return: 3 deals and $10,000 revenue from $800 in ads</small></div>
+        <ul class="ticks"><li>178 leads at $4.50</li><li>90 qualified requests</li><li>Selling Egyptian projects to Kuwait residents</li></ul>
+        <span class="case-more">Read the case study →</span>
+      </a>
+      <a class="case" href="/case-studies/egypt-beach-destination-bookings/">
+        <div class="meta"><span>Tourism · Egypt</span></div>
+        <div class="big">EGP 787K<small>in bookings from EGP 11,430 of ads in 3 months</small></div>
+        <ul class="ticks"><li>2,372 booking messages</li><li>12,626 conversations to date</li><li>EGP 1.82 per conversation</li></ul>
+        <span class="case-more">Read the case study →</span>
+      </a>
     </div>
+    <p class="cases-all"><a href="/case-studies/" class="btn btn-ghost">See all case studies</a></p>
   </div>
 </section>
 

@@ -20,6 +20,19 @@
 - [Clinics](https://bulkgrowth.github.io/industries/clinics/): Patient acquisition for dental, dermatology, laser and aesthetic clinics: WhatsApp and lead-form campaigns on Meta, TikTok and Snapchat, tracked to booked appointments.
 - [Real Estate](https://bulkgrowth.github.io/industries/real-estate/): Real estate lead generation on Meta, Google, TikTok and Snapchat: qualified buyer leads, CRM tracking and funnels from first inquiry to site visit and sale.
 
+## Case studies
+
+- [74,840 patient conversations at 4.66 QAR each](https://bulkgrowth.github.io/case-studies/qatar-clinic-group-meta-ads/): How Meta Ads messaging campaigns brought a multi-specialty clinic group in Qatar 74,840 WhatsApp and Messenger conversations at an average of 4.66 QAR each.
+- [30,000+ patient conversations across Meta, TikTok and Snapchat](https://bulkgrowth.github.io/case-studies/qatar-medical-center-tiktok-meta-snapchat/): A Qatar medical center generated 30,000+ patient conversations across Meta and TikTok and 410 Snapchat leads. TikTok came in 28% cheaper per conversation than Meta.
+- [36,000+ patient conversations from clinic and doctor brand ads](https://bulkgrowth.github.io/case-studies/doctor-led-aesthetic-clinic-qatar/): Clinic and doctor personal-brand campaigns on Meta, TikTok and Snapchat produced 36,000+ patient conversations and 855 Snapchat leads for an aesthetic clinic in Qatar.
+- [EGP 10.6M in tracked sales at 6.1x ROAS](https://bulkgrowth.github.io/case-studies/egypt-ecommerce-meta-ads-roas/): Two Egyptian e-commerce brands turned EGP 1.74M of Meta Ads spend into EGP 10.6M in tracked website sales: 10,879 purchases at a blended 6.1x ROAS, with top campaigns up to 14.8x.
+- [5.15x ROAS on Snapchat across the GCC](https://bulkgrowth.github.io/case-studies/gcc-ecommerce-snapchat-ads/): An online store selling in the GCC got 638 purchases at $6.34 each and a 5.15x ROAS from Snapchat Ads across Kuwait, Saudi Arabia and the UAE.
+- [4,762 inquiries for construction and finishing companies](https://bulkgrowth.github.io/case-studies/qatar-construction-finishing-leads/): Meta and TikTok campaigns for two construction, metal works and facade companies in Qatar: 4,762 inquiries, with TikTok up to 70% cheaper per conversation than Meta.
+- [$800 in ads, 3 property deals, 12.5x return](https://bulkgrowth.github.io/case-studies/kuwait-real-estate-leads/): A real estate campaign selling premium Egyptian projects to Kuwait residents: $800 of ad spend, 178 leads at $4.50, 90 qualified requests, 3 closed deals and $10,000 in revenue.
+- [EGP 11,430 in ads, EGP 787,000 in bookings](https://bulkgrowth.github.io/case-studies/egypt-beach-destination-bookings/): A private beach destination on Egypt's North Coast turned EGP 11,430 of Meta Ads into 2,372 booking messages and EGP 787,000 in revenue in 3 months.
+- [Monthly revenue from EGP 120K to EGP 550K in 3 months](https://bulkgrowth.github.io/case-studies/egypt-restaurant-delivery-growth/): A dine-in and delivery restaurant in Egypt grew monthly revenue from EGP 120,000 to EGP 550,000 in 3 months on an EGP 8,000 monthly Meta Ads budget.
+- [198 high-intent leads in 30 days from Google Ads](https://bulkgrowth.github.io/case-studies/saas-google-ads-leads/): A SaaS and services company got 198 lead-form submissions in 30 days from Google Search and Call Ads: 2,080 clicks at $5.49, $11,400 spend.
+
 ## Articles
 
 - [How to track WhatsApp leads from your ads](https://bulkgrowth.github.io/blog/track-whatsapp-leads/): A practical guide to tracking WhatsApp leads from ads: button clicks, conversations, source codes, and sending qualified leads and sales back to Meta.
