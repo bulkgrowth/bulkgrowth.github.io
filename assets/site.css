@@ -376,7 +376,7 @@ body{top:0!important}
 .qb-list a.on{background:var(--lime);border-color:var(--lime);color:#07111f;font-weight:600}
 .qb-list a.qb-cta{background:var(--lime);color:#07111f;border-color:var(--lime);font-weight:700;margin-left:.6rem}
 .links a,.sub-btn,.nav .btn-primary{white-space:nowrap}
-@media (min-width:1024px){.qb-list{flex-wrap:wrap;overflow:visible;mask-image:none;row-gap:.4rem}}
+@media (min-width:1024px){.qb-list{justify-content:center;overflow:visible;mask-image:none}}
 [dir="rtl"] .qb-list{mask-image:linear-gradient(270deg,#000 92%,transparent)}
 
 .crumbs{font-size:.85rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.2rem}
