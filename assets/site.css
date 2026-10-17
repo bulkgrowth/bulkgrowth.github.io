@@ -378,6 +378,7 @@ body{top:0!important}
 .links a,.sub-btn,.nav .btn-primary{white-space:nowrap}
 @media (min-width:1024px){.qb-list{justify-content:center;overflow:visible;mask-image:none}}
 [dir="rtl"] .qb-list{mask-image:linear-gradient(270deg,#000 92%,transparent)}
+.bg-dust{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:45;mix-blend-mode:screen}
 
 .crumbs{font-size:.85rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:.4rem;margin-bottom:1.2rem}
 .crumbs a{color:var(--muted);text-decoration:none}.crumbs a:hover{color:var(--lime)}
