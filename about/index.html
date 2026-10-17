@@ -51,6 +51,7 @@
       <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="links"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
   </nav>
+  <nav class="quickbar" aria-label="Quick links"><div class="wrap"><ul class="qb-list"><li class="qb-g" aria-hidden="true">Results</li><li><a href="/case-studies/">All results</a></li><li><a href="/results/meta/">Meta</a></li><li><a href="/results/google/">Google</a></li><li><a href="/results/tiktok/">TikTok</a></li><li><a href="/results/snapchat/">Snapchat</a></li><li class="qb-g" aria-hidden="true">Platforms & services</li><li><a href="/services/meta-ads/">Meta Ads</a></li><li><a href="/services/google-ads/">Google Ads</a></li><li><a href="/services/tiktok-snapchat-ads/">TikTok &amp; Snapchat</a></li><li><a href="/services/chatgpt-ads/">ChatGPT Ads</a></li><li><a href="/services/tracking/">Tracking</a></li><li><a href="/services/seo-geo/">SEO &amp; GEO</a></li><li class="qb-g" aria-hidden="true">Industries</li><li><a href="/industries/clinics/">Clinics</a></li><li><a href="/industries/ecommerce/">E-commerce</a></li><li><a href="/industries/real-estate/">Real estate</a></li><li class="qb-g" aria-hidden="true">More</li><li><a href="/growth-strategy/">Growth strategy</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a class="qb-cta" href="/#consult">Book consultation · $50</a></li></ul></div></nav>
 </header>
 <main id="top">
 <section class="page-hero"><div class="wrap">
@@ -126,6 +127,7 @@
   });
 document.querySelectorAll(".sub-btn").forEach(function(b){var m=document.getElementById(b.getAttribute("aria-controls"));b.addEventListener("click",function(e){e.stopPropagation();var o=m.classList.toggle("open");b.setAttribute("aria-expanded",o)});});
 document.addEventListener("click",function(e){document.querySelectorAll(".sub.open").forEach(function(m){if(!m.parentNode.contains(e.target)){m.classList.remove("open");var b=m.parentNode.querySelector(".sub-btn");b&&b.setAttribute("aria-expanded","false")}})});
+(function(){var p=location.pathname;document.querySelectorAll(".qb-list a").forEach(function(a){var h=a.getAttribute("href");if(h!=="/#consult"&&h===p){a.classList.add("on");a.setAttribute("aria-current","page");try{a.scrollIntoView({block:"nearest",inline:"center"})}catch(e){}}})})();
   var b=document.getElementById("menuBtn"),l=document.getElementById("links");
   if(b)b.addEventListener("click",function(){var o=l.classList.toggle("open");b.setAttribute("aria-expanded",o)});
   document.getElementById("yr").textContent=new Date().getFullYear();

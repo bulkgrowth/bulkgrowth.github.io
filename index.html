@@ -735,6 +735,20 @@ body{top:0!important}
 [dir="rtl"] .prose .answer{border-left:0;border-right:3px solid var(--lime);border-radius:12px 0 0 12px}
 [dir="rtl"] .sub{left:auto;right:-1rem}
 [dir="rtl"] .kpi b,[dir="rtl"] .cbig,[dir="rtl"] .case .big,[dir="rtl"] .tally b,[dir="rtl"] .ba-chg,[dir="rtl"] .ba-row b,[dir="rtl"] .price b,[dir="rtl"] td{unicode-bidi:plaintext}
+.quickbar{border-top:1px solid var(--line);background:color-mix(in srgb,var(--panel) 70%,transparent)}
+.quickbar .wrap{position:relative}
+.qb-list{list-style:none;margin:0;padding:.45rem 0;display:flex;align-items:center;gap:.35rem;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch;mask-image:linear-gradient(90deg,#000 92%,transparent)}
+.qb-list::-webkit-scrollbar{display:none}
+.qb-list li{flex:0 0 auto}
+.qb-g{font-size:.64rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);padding:0 .3rem 0 .9rem;border-left:1px solid var(--line);margin-left:.3rem}
+.qb-g:first-child{border-left:0;padding-left:0;margin-left:0}
+.qb-list a{display:block;text-decoration:none;color:var(--soft);font-size:.82rem;padding:.38rem .75rem;border:1px solid var(--line);border-radius:999px;white-space:nowrap;transition:border-color .2s,color .2s}
+.qb-list a:hover{border-color:var(--lime);color:var(--text)}
+.qb-list a.on{background:var(--lime);border-color:var(--lime);color:#07111f;font-weight:600}
+.qb-list a.qb-cta{background:var(--lime);color:#07111f;border-color:var(--lime);font-weight:700;margin-left:.6rem}
+.links a,.sub-btn,.nav .btn-primary{white-space:nowrap}
+@media (min-width:1024px){.qb-list{flex-wrap:wrap;overflow:visible;mask-image:none;row-gap:.4rem}}
+[dir="rtl"] .qb-list{mask-image:linear-gradient(270deg,#000 92%,transparent)}
 </style>
 </head>
 <body>
@@ -750,7 +764,6 @@ body{top:0!important}
       <li><a href="#consult">Consultation</a></li>
       <li><a href="#chatgpt-ads">ChatGPT Ads</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a href="#tracking">Tracking</a></li>
       <li class="has-sub"><button type="button" class="sub-btn" aria-expanded="false" aria-controls="subResults">Results <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
         <ul class="sub" id="subResults">
           <li><a href="/results/meta/"><i class="pl pl-meta" aria-hidden="true"></i>Meta Ads results</a></li>
@@ -759,7 +772,6 @@ body{top:0!important}
           <li><a href="/results/snapchat/"><i class="pl pl-snap" aria-hidden="true"></i>Snapchat Ads results</a></li>
           <li><a href="/case-studies/"><i class="pl" aria-hidden="true"></i>All results by client</a></li>
         </ul></li>
-      <li><a href="#ai-search">AI search</a></li>
       <li><a href="#about">About us</a></li>
       <li><a href="#faq">FAQ</a></li>
       <li><a href="/blog/">Blog</a></li>
@@ -772,6 +784,7 @@ body{top:0!important}
       </button>
     </div>
   </nav>
+  <nav class="quickbar" aria-label="Quick links"><div class="wrap"><ul class="qb-list"><li class="qb-g" aria-hidden="true">Results</li><li><a href="/case-studies/">All results</a></li><li><a href="/results/meta/">Meta</a></li><li><a href="/results/google/">Google</a></li><li><a href="/results/tiktok/">TikTok</a></li><li><a href="/results/snapchat/">Snapchat</a></li><li class="qb-g" aria-hidden="true">Platforms & services</li><li><a href="/services/meta-ads/">Meta Ads</a></li><li><a href="/services/google-ads/">Google Ads</a></li><li><a href="/services/tiktok-snapchat-ads/">TikTok &amp; Snapchat</a></li><li><a href="/services/chatgpt-ads/">ChatGPT Ads</a></li><li><a href="/services/tracking/">Tracking</a></li><li><a href="/services/seo-geo/">SEO &amp; GEO</a></li><li class="qb-g" aria-hidden="true">Industries</li><li><a href="/industries/clinics/">Clinics</a></li><li><a href="/industries/ecommerce/">E-commerce</a></li><li><a href="/industries/real-estate/">Real estate</a></li><li class="qb-g" aria-hidden="true">More</li><li><a href="/growth-strategy/">Growth strategy</a></li><li><a href="/blog/">Blog</a></li><li><a href="/about/">About</a></li><li><a class="qb-cta" href="/#consult">Book consultation · $50</a></li></ul></div></nav>
 </header>
 
 <main id="top">
@@ -1530,6 +1543,7 @@ function sel(el){ const r=document.createRange(); r.selectNodeContents(el); cons
 
 document.querySelectorAll(".sub-btn").forEach(function(b){var m=document.getElementById(b.getAttribute("aria-controls"));b.addEventListener("click",function(e){e.stopPropagation();var o=m.classList.toggle("open");b.setAttribute("aria-expanded",o)});});
 document.addEventListener("click",function(e){document.querySelectorAll(".sub.open").forEach(function(m){if(!m.parentNode.contains(e.target)){m.classList.remove("open");var b=m.parentNode.querySelector(".sub-btn");b&&b.setAttribute("aria-expanded","false")}})});
+(function(){var p=location.pathname;document.querySelectorAll(".qb-list a").forEach(function(a){var h=a.getAttribute("href");if(h!=="/#consult"&&h===p){a.classList.add("on");a.setAttribute("aria-current","page");try{a.scrollIntoView({block:"nearest",inline:"center"})}catch(e){}}})})();
 const menuBtn = document.getElementById("menuBtn"), links = document.getElementById("links");
 menuBtn.addEventListener("click", () => { const o = links.classList.toggle("open"); menuBtn.setAttribute("aria-expanded", o); });
 links.addEventListener("click", e => { if (e.target.tagName === "A") { links.classList.remove("open"); menuBtn.setAttribute("aria-expanded","false"); } });
