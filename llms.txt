@@ -2,7 +2,7 @@
 
 > Bulk Growth is a performance marketing agency that plans and runs paid advertising on Meta, Google, TikTok, Snapchat, LinkedIn and ChatGPT Ads, sets up conversion tracking with Google Tag Manager and GA4, and works on SEO and Generative Engine Optimization (GEO). It serves e-commerce brands, clinics, real estate and SaaS companies across the GCC, Europe and the USA. It is led by Mohamed Elmlegey, a senior media buyer.
 
-- Book a 30-minute consultation ($50): https://bulkgrowth.github.io/#consult
+- Book a 30-minute consultation ($50): https://bulkgrowth.github.io/consultation/
 - WhatsApp: +20 104 066 6433 · Instagram: @bulk.growth
 
 ## Services
@@ -48,3 +48,12 @@
 - [About Bulk Growth](https://bulkgrowth.github.io/about/): who we are, how we work, and who leads the agency
 - [Growth strategy](https://bulkgrowth.github.io/growth-strategy/): how we plan every client: market and competitor analysis, media plans, KPIs
 - [All client results](https://bulkgrowth.github.io/case-studies/): real results with ad-account screenshots
+
+## Site sections
+
+- [Consultation](https://bulkgrowth.github.io/consultation/): Book a 30-minute video consultation for $50. We review your ads, funnel and tracking before the call and show you the biggest leaks and the quickest fixes.
+- [Services](https://bulkgrowth.github.io/services/): Meta, Google, TikTok, Snapchat, LinkedIn and ChatGPT Ads, conversion tracking with GTM and GA4, SEO and GEO, media production, design and page management.
+- [ChatGPT Ads & AI search](https://bulkgrowth.github.io/ai-search/): Advertise next to ChatGPT answers and get your brand recommended by ChatGPT, Gemini, Perplexity and Google AI Overviews.
+- [How we work](https://bulkgrowth.github.io/how-we-work/): How Bulk Growth works: audit, tracking, strategy, launch, weekly optimisation and scaling, led by senior media buyer Mohamed Elmlegey.
+- [FAQ](https://bulkgrowth.github.io/faq/): Answers to common questions about working with Bulk Growth: pricing, contracts, ad spend, tracking, platforms and timelines.
+- [Contact](https://bulkgrowth.github.io/contact/): Contact Bulk Growth on WhatsApp or send your details through the form. We reply with first ideas for your ads.

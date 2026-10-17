@@ -198,7 +198,7 @@
       "@type": "Offer",
       "price": "50",
       "priceCurrency": "USD",
-      "url": "https://bulkgrowth.github.io/#consult",
+      "url": "https://bulkgrowth.github.io/consultation/",
       "itemOffered": {
        "@type": "Service",
        "name": "30-minute growth consultation",
@@ -259,111 +259,6 @@
     "@type": "ImageObject",
     "url": "https://bulkgrowth.github.io/images/og-image.jpg"
    }
-  },
-  {
-   "@type": "FAQPage",
-   "@id": "https://bulkgrowth.github.io/#faq",
-   "isPartOf": {
-    "@id": "https://bulkgrowth.github.io/#webpage"
-   },
-   "mainEntity": [
-    {
-     "@type": "Question",
-     "name": "How do you track WhatsApp leads?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "We track every WhatsApp click, every conversation that actually starts, and which ad or campaign started it. When a chat turns into a real lead or a sale, that is sent back to Meta so your ads learn to bring more customers like that one."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Why does tracking matter before running ads?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Ad platforms optimize on the results you report to them. If sales, leads and WhatsApp chats are not tracked correctly, they optimize for clicks instead of customers. We connect your site, store, WhatsApp and app to Meta, Google, TikTok, Snapchat and GA4 first, so every campaign learns from real results."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Can I advertise on ChatGPT?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes, in the markets where OpenAI has opened ads. ChatGPT shows sponsored placements next to relevant answers. We set up and manage ChatGPT Ads and tell you upfront if your market isn't available yet."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "What is GEO, and how is it different from SEO?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "SEO helps your pages rank in Google results. GEO (Generative Engine Optimization) helps AI assistants like ChatGPT, Gemini, Perplexity and Google AI Overviews understand, trust and recommend your brand. The groundwork overlaps, so we run both together."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Which industries do you work with?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "E-commerce and retail, medical and aesthetic clinics, real estate and construction, restaurants and cafes, tourism and hospitality, and SaaS."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Which markets do you work in?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Qatar, Saudi Arabia, the UAE, Kuwait and Egypt, plus campaigns in the USA, UK, Germany, France and other European countries, in English and Arabic."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Who owns the ad accounts and the tracking setup?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "You do. Ad accounts, tracking and analytics stay in your business, and we work in them with access permissions."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "Do you work with international clients?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "Yes. We work remotely with brands in the GCC, Egypt, Europe and the USA, in English and Arabic. Communication runs on WhatsApp and video calls, and reporting is shared through a live dashboard."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "How do you measure success?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "We agree on business numbers before launch: return on ad spend and cost per purchase for online stores, cost per qualified lead and closed deals for lead generation. Clicks and reach are tracked, but they are not the goal."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "What happens in the $50 consultation?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "It is a 30-minute video call about your business. You answer a short form and pick a time in our calendar, we review your ads, funnel and tracking before the call, and in the call we show you the biggest problems costing you money and the quickest fixes. You get a short written summary afterwards."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "How do I pay for the consultation?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "After you pick a time in our calendar, we send you a secure invoice for $50 on WhatsApp. You can pay it by bank transfer in USD (ACH or wire) or EUR (SEPA) from anywhere. The call is booked once the payment arrives."
-     }
-    },
-    {
-     "@type": "Question",
-     "name": "How does pricing work?",
-     "acceptedAnswer": {
-      "@type": "Answer",
-      "text": "A monthly management fee based on ad spend, channels and services. Tracking setups are quoted as a one-time project. Message us on WhatsApp for a detailed quote."
-     }
-    }
-   ]
   }
  ]
 }
@@ -770,22 +665,54 @@ body{top:0!important}
 @media (prefers-reduced-motion:reduce){.tk-track{animation:none}.tk-view{overflow-x:auto}}
 @media (max-width:600px){.hero .wrap{padding-top:1.4rem!important}.ticker{border-radius:14px;flex-direction:column;align-items:stretch;padding:.5rem}.tk-tag{align-self:flex-start}.tk-track{animation-duration:36s}}
 [dir="rtl"] .tk-track{animation-direction:reverse}
+.tiles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.9rem}
+.tile{position:relative;display:grid;gap:.45rem;align-content:start;padding:1.2rem 1.1rem 1.3rem;border:1px solid var(--line);border-radius:16px;background:var(--ink);text-decoration:none;color:var(--text);transition:border-color .2s,transform .2s,background .2s;min-width:0}
+.tile:hover{border-color:var(--lime);transform:translateY(-3px);background:color-mix(in srgb,var(--lime) 5%,var(--ink))}
+.tile-ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background:color-mix(in srgb,var(--lime) 12%,transparent);color:var(--lime);margin-bottom:.3rem}
+.tile-ic svg{width:22px;height:22px}
+.tile b{font-size:1rem;line-height:1.25}
+.tile span:not(.tile-ic){color:var(--muted);font-size:.86rem;line-height:1.5}
+.tile i{position:absolute;top:1.1rem;right:1rem;font-style:normal;color:var(--muted);transition:transform .2s,color .2s}
+.tile:hover i{color:var(--lime);transform:translateX(3px)}
+.tile-main{background:var(--lime);border-color:var(--lime);color:#07111f}
+.tile-main span:not(.tile-ic),.tile-main i{color:#1d2b10}
+.tile-main .tile-ic{background:rgba(7,17,31,.12);color:#07111f}
+.tile-main:hover{background:#b8ff3a}
+@media (max-width:1100px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:640px){.tiles{grid-template-columns:1fr 1fr;gap:.6rem}.tile{padding:1rem .9rem}.tile span:not(.tile-ic){font-size:.8rem}.tile-main{grid-column:1/-1}}
+.end-cta{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center;justify-content:space-between}
+.end-cta h2{font-size:clamp(1.6rem,3.6vw,2.4rem);max-width:22ch;margin:.6rem 0}
+.end-cta p{color:var(--muted);max-width:36rem}
+.end-cta .ctas{display:flex;flex-wrap:wrap;gap:.8rem}
+.legal-links{display:flex;flex-wrap:wrap;gap:1rem}
+.legal-links a{color:var(--muted)}.legal-links a:hover{color:var(--lime)}
+.sp-hero{border-bottom:1px solid var(--line);background:radial-gradient(60% 90% at 90% 0%,color-mix(in srgb,var(--cyan) 9%,transparent),transparent 70%),var(--ink)}
+.sp-hero .wrap{padding-block:clamp(2rem,6vw,3.5rem)}
+.sp-hero h1{font-size:clamp(2rem,5vw,3.4rem);max-width:22ch;margin:.8rem 0 1rem;text-transform:uppercase;font-stretch:112%}
+.sp-hero p{color:var(--soft);font-size:1.08rem;max-width:44rem}
+.sp-crumbs{font-size:.85rem;color:var(--muted);display:flex;gap:.4rem;margin-bottom:1rem}
+.sp-crumbs a{color:var(--muted);text-decoration:none}.sp-crumbs a:hover{color:var(--lime)}
+.svc-detail{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.svc-detail a{border:1px solid var(--line);border-radius:14px;padding:1.2rem;text-decoration:none;color:var(--text);display:grid;gap:.4rem;background:var(--ink)}
+.svc-detail a:hover{border-color:var(--lime)}
+.svc-detail span{color:var(--muted);font-size:.9rem}
+@media (max-width:900px){.svc-detail{grid-template-columns:1fr}}
 .bg-dust{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:45;mix-blend-mode:screen}
 </style>
 </head>
 <body>
 <div>
 
-<a class="topbar" href="#consult"><b>New:</b> 30-minute growth consultation for <b>$50</b>. Find out where your ads are losing money. <span>Book now →</span></a>
+<a class="topbar" href="/consultation/"><b>New:</b> 30-minute growth consultation for <b>$50</b>. Find out where your ads are losing money. <span>Book now →</span></a>
 <header>
   <nav class="wrap nav" aria-label="Main navigation">
     <a href="#top" class="brand notranslate" aria-label="Bulk Growth home">
       <img src="/images/bulk-growth-logo.webp" alt="Bulk Growth" width="182" height="42" decoding="async">
     </a>
     <ul class="links" id="links">
-      <li><a href="#consult">Consultation</a></li>
-      <li><a href="#chatgpt-ads">ChatGPT Ads</a></li>
-      <li><a href="#services">Services</a></li>
+      <li><a href="/consultation/">Consultation</a></li>
+      <li><a href="/ai-search/">ChatGPT Ads</a></li>
+      <li><a href="/services/">Services</a></li>
       <li class="has-sub"><button type="button" class="sub-btn" aria-expanded="false" aria-controls="subResults">Results <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
         <ul class="sub" id="subResults">
           <li><a href="/results/meta/"><i class="pl pl-meta" aria-hidden="true"></i>Meta Ads results</a></li>
@@ -794,13 +721,13 @@ body{top:0!important}
           <li><a href="/results/snapchat/"><i class="pl pl-snap" aria-hidden="true"></i>Snapchat Ads results</a></li>
           <li><a href="/case-studies/"><i class="pl" aria-hidden="true"></i>All results by client</a></li>
         </ul></li>
-      <li><a href="#about">About us</a></li>
-      <li><a href="#faq">FAQ</a></li>
+      <li><a href="/about/">About us</a></li>
+      <li><a href="/faq/">FAQ</a></li>
       <li><a href="/blog/">Blog</a></li>
     </ul>
     <div style="display:flex;gap:.6rem;align-items:center">
       <div class="lang" data-lang-slot></div>
-      <a href="#consult" class="btn btn-primary">Book consultation · $50</a>
+      <a href="/consultation/" class="btn btn-primary">Book consultation · $50</a>
       <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="links">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
@@ -811,7 +738,7 @@ body{top:0!important}
 
 <main id="top">
 
-<section class="hero" style="padding-bottom:0">
+<section id="hero" class="hero" style="padding-bottom:0">
   <canvas id="hex" aria-hidden="true"></canvas>
   <div class="wrap">
     <div class="ticker rise" aria-label="Real client results">
@@ -826,250 +753,35 @@ body{top:0!important}
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>
         Chat with us on WhatsApp
       </a>
-      <a href="#consult" class="btn btn-primary">Book a 30-min consultation · $50</a>
+      <a href="/consultation/" class="btn btn-primary">Book a 30-min consultation · $50</a>
     </div>
     <div class="platforms rise">
       <small>Tap a channel to see how we help</small>
       <button type="button" class="chip chip-btn" data-help="meta">Meta</button><button type="button" class="chip chip-btn" data-help="google">Google</button><button type="button" class="chip chip-btn" data-help="social">TikTok</button><button type="button" class="chip chip-btn" data-help="social">Snapchat</button><button type="button" class="chip chip-btn" data-help="linkedin">LinkedIn</button><button type="button" class="chip chip-btn new" data-help="chatgpt">ChatGPT</button><button type="button" class="chip chip-btn" data-help="seo">SEO</button><button type="button" class="chip chip-btn new" data-help="geo">GEO</button><button type="button" class="chip chip-btn" data-help="tracking">Tracking</button>
     </div>
     <div class="tally" aria-label="Results to date">
-      <div><b>40+</b><span>brands grown across the GCC, Europe and the USA</span></div>
-      <div><b>$10M</b><span>in ad spend managed</span></div>
-      <div><b>Up to 30x</b><span>return on ad spend for online stores</span></div>
-      <div><b>80%</b><span>lead-to-deal rate in real estate</span></div>
+      <div><b>40+</b><span>brands across the GCC and Egypt</span></div>
+      <div><b>245K+</b><span>conversations &amp; leads, with screenshots</span></div>
+      <div><b>6.1x</b><span>ROAS on EGP 10.6M of tracked sales</span></div>
+      <div><b>12.5x</b><span>return for a real estate client</span></div>
     </div>
   </div>
 </section>
 
-<section id="consult" class="consult">
-  <div class="wrap consult-grid">
-    <div class="consult-info">
-      <span class="eyebrow">Growth consultation</span>
-      <h2>30 minutes. $50. A clear plan for your business.</h2>
-      <p>Answer a few questions so we know your situation before the call. We use the 30 minutes to find where your marketing is losing money and agree on the fastest fixes.</p>
-      <div class="price"><b>$50</b><span>30-minute video call<br>English or Arabic</span></div>
-      <p class="help-sub">In the call you get</p>
-      <ul class="ticks">
-        <li>A review of your ads, funnel and tracking before we meet</li>
-        <li>The 2–3 biggest problems costing you money, ranked</li>
-        <li>Quick fixes you can apply this week</li>
-        <li>A short written summary after the call</li>
-      </ul>
-      <p class="help-sub">How it works</p>
-      <ol class="help-steps">
-        <li>Fill in the form. It takes about 2 minutes.</li>
-        <li>Pick a time in our calendar. You get a confirmation email and a Google Meet link.</li>
-        <li>We send you a secure $50 invoice on WhatsApp, payable by bank transfer in USD or EUR.</li>
-        <li>You get email reminders 24 hours and 1 hour before the call.</li>
-        <li>We meet for 30 minutes and you leave with a plan.</li>
-      </ol>
-    </div>
-
-    <form id="consultForm" novalidate>
-      <p class="form-title">Book your consultation</p>
-      <div class="row2">
-        <div class="field"><label for="c-name">Your name</label><input id="c-name" name="name" required autocomplete="name"></div>
-        <div class="field"><label for="c-biz">Business name</label><input id="c-biz" name="biz" autocomplete="organization"></div>
-      </div>
-      <div class="field"><label for="c-link">Website, store or Instagram link</label><input id="c-link" name="link" placeholder="https://" autocomplete="url"></div>
-      <div class="row2">
-        <div class="field"><label for="c-type">Business type</label>
-          <select id="c-type" name="type"><option>E-commerce store</option><option>Clinic / medical</option><option>Real estate</option><option>Restaurant / café</option><option>Tourism / hotel</option><option>SaaS / app</option><option>Services / B2B</option><option>Other</option></select></div>
-        <div class="field"><label for="c-country">Country</label>
-          <select id="c-country" name="country" class="js-countries"></select></div>
-      </div>
-      <div class="row2">
-        <div class="field"><label for="c-budget">Monthly ad budget (USD)</label>
-          <select id="c-budget" name="budget" class="js-budget"></select></div>
-        <div class="field"><label for="c-goal">Main goal right now</label>
-          <select id="c-goal" name="goal"><option>More sales</option><option>More leads or bookings</option><option>Lower cost per result</option><option>Scale what already works</option><option>Launch a new product or market</option><option>Fix my tracking</option></select></div>
-      </div>
-      <fieldset class="field">
-        <legend>Where do you advertise now?</legend>
-        <div class="checks">
-          <label><input type="checkbox" name="channels" value="Meta"> Meta</label>
-          <label><input type="checkbox" name="channels" value="Google"> Google</label>
-          <label><input type="checkbox" name="channels" value="TikTok"> TikTok</label>
-          <label><input type="checkbox" name="channels" value="Snapchat"> Snapchat</label>
-          <label><input type="checkbox" name="channels" value="LinkedIn"> LinkedIn</label>
-          <label><input type="checkbox" name="channels" value="Not advertising yet"> Not yet</label>
-        </div>
-      </fieldset>
-      <div class="field"><label for="c-problem">Biggest problem right now</label>
-        <select id="c-problem" name="problem">
-          <option>Ads spend money but don't bring profit</option>
-          <option>Leads are low quality or don't buy</option>
-          <option>Cost per result keeps rising</option>
-          <option>I can't tell which ads bring sales</option>
-          <option>Lots of WhatsApp chats, few sales</option>
-          <option>Can't scale without losing profit</option>
-          <option>Don't know where to start</option>
-          <option>Something else</option>
-        </select></div>
-      <div class="field"><label for="c-track">Do you track sales or leads from your ads?</label>
-        <select id="c-track" name="track"><option>Yes, fully</option><option>Partly</option><option>No</option><option>Not sure</option></select></div>
-      <div class="field"><label for="c-more">Anything we should know before the call?</label><textarea id="c-more" name="more" placeholder="e.g. ROAS dropped from 4x to 2x since last month"></textarea></div>
-      <div class="row2">
-        <div class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" required autocomplete="email" placeholder="you@company.com"></div>
-        <div class="field"><label for="c-wa">WhatsApp number</label><input id="c-wa" name="wa" type="tel" required autocomplete="tel" placeholder="+971 50 123 4567"></div>
-      </div>
-      <p class="err" id="consultErr" hidden>Add your name, email and WhatsApp number so we can confirm your booking.</p>
-      <button class="btn btn-primary" type="submit">Choose a time · $50</button>
-      <p class="form-hint">Next, our calendar opens so you can pick a time. We then send a $50 invoice on WhatsApp, payable by bank transfer in USD or EUR. Nothing is charged until you confirm.</p>
-      <div class="booked" id="consultDone" hidden>
-        <p><b>Your calendar is open in a new tab.</b> Pick a time there to confirm your call.</p>
-        <p class="form-hint">Didn't open? <a id="calLink" href="https://cal.com/bulkgrowth/consultation" target="_blank" rel="noopener">Open the booking calendar</a> or <a class="js-wa" data-msg="contact" data-loc="consult_fallback" href="https://wa.me/201040666433" target="_blank" rel="noopener">message us on WhatsApp</a>.</p>
-      </div>
-    </form>
-  </div>
-</section>
-
-<section id="chatgpt-ads" class="gpt">
-  <div class="wrap gpt-grid">
-    <div class="gpt-copy">
-      <span class="gpt-new">New</span>
-      <span class="eyebrow">ChatGPT Ads are here</span>
-      <h2>Your brand, right next to the answer</h2>
-      <p>Ads on ChatGPT are now live. When people ask which product, clinic or service to choose, a sponsored placement can show your brand beside the answer, at the moment they decide.</p>
-      <ul class="ticks">
-        <li>Live in the US, Canada, Australia and 31 European countries, with more markets rolling out</li>
-        <li>Reach shoppers at the moment of decision, not while they scroll</li>
-        <li>We set it up, track every click and sale, and compare it with your Meta and Google results</li>
-      </ul>
-      <div class="gpt-ctas">
-        <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="chatgpt" data-loc="chatgpt_ads">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Ask about ChatGPT Ads on WhatsApp
-        </a>
-        <a class="btn btn-ghost" href="/services/chatgpt-ads/">How it works</a>
-      </div>
-    </div>
-    <figure class="gpt-mock" aria-label="Illustration of a sponsored placement next to an AI chat answer">
-      <div class="gm-bar"><span></span><span></span><span></span><b>ChatGPT</b></div>
-      <div class="gm-body">
-        <div class="gm-user">Which clinic in Doha is best for laser hair removal?</div>
-        <div class="gm-ai"><i class="gm-av" aria-hidden="true"></i><div><p>Here are a few things to compare: the device used, the number of sessions, price per session and patient reviews.</p><p class="gm-line"></p><p class="gm-line short"></p></div></div>
-        <div class="gm-ad">
-          <span class="gm-sp">Sponsored</span>
-          <div class="gm-ad-row"><i class="gm-logo" aria-hidden="true">YB</i><div><b>Your Brand</b><small>Laser hair removal · first session offer</small></div></div>
-          <span class="gm-btn">Chat on WhatsApp</span>
-        </div>
-        <div class="gm-input">Ask anything <i aria-hidden="true">↑</i></div>
-      </div>
-      <figcaption>Illustration. Ad formats and availability depend on your market.</figcaption>
-    </figure>
-  </div>
-</section>
-
-<section id="services">
+<section id="start">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Services</span>
-      <h2>A full-service growth partner</h2>
-      <p>Paid ads, tracking, content and organic visibility under one team, so every part of the funnel is built to sell.</p>
-    </div>
-    <div class="svc-grid">
-      <article class="svc"><span class="tag">Performance marketing</span><h3>Paid ads that pay back</h3><p>Lead generation, sales campaigns and retargeting on Meta, Google, TikTok, Snapchat and LinkedIn.</p><ul><li>Lead gen</li><li>Sales</li><li>Retargeting</li><li>CRO</li></ul><button type="button" class="more" data-help="perf">How we help you →</button><a class="svc-link" href="/services/meta-ads/">Full service page</a></article>
-      <article class="svc"><span class="tag">ChatGPT Ads <em>New</em></span><h3>Ads inside ChatGPT</h3><p>Sponsored placements next to ChatGPT answers, where shoppers ask what to buy. In markets where OpenAI has opened ads.</p><button type="button" class="more" data-help="chatgpt">How we help you →</button><a class="svc-link" href="/services/chatgpt-ads/">Full service page</a></article>
-      <article class="svc"><span class="tag">Tracking · GTM</span><h3>Tracking &amp; analytics</h3><p>Every sale, lead, WhatsApp chat and app install counted and connected to your ad accounts.</p><ul><li>GTM</li><li>GA4</li><li>CAPI</li><li>Looker Studio</li></ul><button type="button" class="more" data-help="tracking">How we help you →</button><a class="svc-link" href="/services/tracking/">Full service page</a></article>
-      <article class="svc"><span class="tag">SEO · GEO <em>New</em></span><h3>Google &amp; AI search</h3><p>Rank on Google and get recommended by ChatGPT, Gemini, Perplexity and Google AI Overviews.</p><div class="svc-more"><button type="button" class="more" data-help="seo">How SEO helps →</button><button type="button" class="more" data-help="geo">How GEO helps →</button></div><a class="svc-link" href="/services/seo-geo/">Full service page</a></article>
-      <article class="svc"><span class="tag">Media production</span><h3>Content that sells before you speak</h3><p>High-quality production that tells your story.</p><ul><li>Product shoots</li><li>Restaurant shoots</li><li>Real estate</li><li>Reels</li><li>Commercials</li></ul><button type="button" class="more" data-help="production">How we help you →</button></article>
-      <article class="svc"><span class="tag">Design</span><h3>Design that stops the scroll</h3><p>Visuals that grab attention and build your brand identity.</p><ul><li>Social posts</li><li>Stories</li><li>Ad creatives</li><li>Branding</li></ul><button type="button" class="more" data-help="design">How we help you →</button></article>
-      <article class="svc"><span class="tag">Page management</span><h3>Your brand never sleeps</h3><p>We run your pages, content and community so you can run your business.</p><ul><li>Content plan</li><li>Community</li><li>Daily posting</li><li>Reports</li></ul><button type="button" class="more" data-help="pages">How we help you →</button></article>
-      <article class="svc"><span class="tag">Strategy</span><h3>Funnels &amp; offers</h3><p>Buyer personas, market and competitor research, offer positioning and full-funnel maps from first view to repeat purchase.</p><button type="button" class="more" data-help="strategy">How we help you →</button></article>
-    </div>
-    <p class="svc-pages">Explore: <a href="/services/meta-ads/">Meta Ads</a> · <a href="/services/google-ads/">Google Ads</a> · <a href="/services/tiktok-snapchat-ads/">TikTok &amp; Snapchat</a> · <a href="/industries/ecommerce/">E-commerce</a> · <a href="/industries/clinics/">Clinics</a> · <a href="/industries/real-estate/">Real estate</a></p>
-    <div class="svc-foot">
-      <p>Not sure where to start? Send us your link and we'll tell you.</p>
-      <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="services" data-loc="services">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>
-        Ask us on WhatsApp
-      </a>
-    </div>
+    <div class="sec-head"><span class="eyebrow">Start here</span><h2>What do you need?</h2><p>Pick a section. Each one has its own page, so you get to what matters faster.</p></div>
+    <nav class="tiles" aria-label="Site sections"><a class="tile tile-main" href="/consultation/"><span class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><b>Book a consultation</b><span>30 minutes, $50. We review your ads and show you the leaks.</span><i aria-hidden="true">→</i></a><a class="tile" href="/case-studies/"><span class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><b>Results &amp; case studies</b><span>Real client numbers with ad-account screenshots.</span><i aria-hidden="true">→</i></a><a class="tile" href="/services/"><span class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span><b>Services</b><span>Meta, Google, TikTok, Snapchat, LinkedIn, design and content.</span><i aria-hidden="true">→</i></a><a class="tile" href="/ai-search/"><span class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3l1.8 4.6L18 9.5l-4.2 1.9L12 16l-1.8-4.6L6 9.5l4.2-1.9z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></span><b>ChatGPT Ads &amp; AI search</b><span>Advertise on ChatGPT and get recommended by AI.</span><i aria-hidden="true">→</i></a><a class="tile" href="/services/#tracking"><span class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></span><b>Tracking &amp; analytics</b><span>Every sale, lead and WhatsApp chat counted.</span><i aria-hidden="true">→</i></a><a class="tile" href="/growth-strategy/"><span class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><b>Growth strategy</b><span>Market research, competitor analysis and real plans.</span><i aria-hidden="true">→</i></a><a class="tile" href="/industries/"><span class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></span><b>Industries</b><span>Clinics, e-commerce, real estate and more.</span><i aria-hidden="true">→</i></a><a class="tile" href="/how-we-work/"><span class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h7"/><circle cx="18" cy="16" r="3"/></svg></span><b>How we work</b><span>Our process from audit to scaling, and who we are.</span><i aria-hidden="true">→</i></a><a class="tile" href="/faq/"><span class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.7M12 17h.01"/></svg></span><b>FAQ</b><span>Pricing, contracts, tracking and timelines.</span><i aria-hidden="true">→</i></a><a class="tile" href="/contact/"><span class="tile-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z"/></svg></span><b>Contact</b><span>Send your link on WhatsApp and get a plan.</span><i aria-hidden="true">→</i></a></nav>
   </div>
 </section>
 
 <!-- TRACKING -->
-<section id="tracking" class="band">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Tracking with Google Tag Manager</span>
-      <h2>If it isn't tracked, it can't be scaled</h2>
-      <p>Before we spend a single riyal, we connect your website, store, WhatsApp and app to your ad accounts. That way every sale, lead and chat is counted, and the platforms learn to bring you more of the right customers.</p>
-    </div>
-
-    <div class="trk-grid">
-      <article class="trk">
-        <span class="tag">E-commerce stores</span>
-        <h3>Every step to the sale</h3>
-        <ul class="ticks">
-          <li>Product views</li>
-          <li>Add to cart</li>
-          <li>Checkout started</li>
-          <li>Purchases and revenue per order</li>
-          <li>Returns and cancelled cash-on-delivery orders</li>
-        </ul>
-        <p class="fit">Shopify · Salla · Zid · WooCommerce · custom stores</p>
-      </article>
-      <article class="trk">
-        <span class="tag">Lead generation</span>
-        <h3>From form to closed deal</h3>
-        <ul class="ticks">
-          <li>Form submissions</li>
-          <li>Booked appointments and calls</li>
-          <li>Leads from Meta, TikTok and Snapchat instant forms</li>
-          <li>Qualified leads from your sales team</li>
-          <li>Closed deals and their value</li>
-        </ul>
-        <p class="fit">Clinics · real estate · services · B2B</p>
-      </article>
-      <article class="trk">
-        <span class="tag">WhatsApp</span>
-        <h3>Chats that turn into customers</h3>
-        <ul class="ticks">
-          <li>Clicks on every WhatsApp button</li>
-          <li>Conversations actually started</li>
-          <li>Which ad or campaign started each chat</li>
-          <li>Chats that became real leads</li>
-          <li>Bookings and sales closed on WhatsApp</li>
-        </ul>
-        <p class="fit">Click-to-WhatsApp ads · WhatsApp Business</p>
-      </article>
-      <article class="trk">
-        <span class="tag">Mobile apps</span>
-        <h3>From install to paying user</h3>
-        <ul class="ticks">
-          <li>App installs and first opens</li>
-          <li>Sign-ups</li>
-          <li>In-app purchases</li>
-          <li>Trials and subscriptions</li>
-          <li>Which campaign brought each user</li>
-        </ul>
-        <p class="fit">iOS · Android</p>
-      </article>
-    </div>
-
-    <div class="connect"><button type="button" class="btn btn-ghost" data-help="tracking">How we set up your tracking</button>
-      <p>Connected to</p>
-      <div class="chips">
-        <span class="chip">Google Tag Manager</span><span class="chip">GA4</span><span class="chip">Meta Ads</span><span class="chip">Google Ads</span><span class="chip">TikTok Ads</span><span class="chip">Snapchat Ads</span><span class="chip">Your CRM</span><span class="chip">Looker Studio dashboard</span>
-      </div>
-    </div>
-
-    <div class="deliver">
-      <div><b>Tracking plan</b><span>A clear list of everything we track, written in plain language.</span></div>
-      <div><b>Full setup</b><span>Built inside your own accounts, so it stays yours.</span></div>
-      <div><b>Tested before launch</b><span>Every action checked to make sure it counts once, and counts right.</span></div>
-      <div><b>Live dashboard</b><span>Spend, leads, sales and ROAS across all channels in one report.</span></div>
-    </div>
-  </div>
-</section>
-
 <section id="results">
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow">Results</span>
-      <h2>40+ brands. $10M in ad spend.</h2>
-      <p>Since 2022 we've run campaigns for brands across the GCC, Europe and the USA, in e-commerce, clinics, real estate, restaurants, tourism and SaaS. Many accounts stay confidential at the client's request.</p>
+      <h2>40+ brands. Real numbers, real screenshots.</h2>
+      <p>Since 2022 we've run campaigns in Qatar, the UAE, Saudi Arabia, Kuwait and Egypt for clinics, e-commerce, construction, real estate, tourism and SaaS. Every number below links to the client's ad-account screenshots. Many accounts stay confidential at the client's request.</p>
     </div>
     <div class="cases">
       <a class="case" href="/case-studies/al-kindi-clinics-center/">
@@ -1114,138 +826,15 @@ body{top:0!important}
   </div>
 </section>
 
-<section id="ai-search" class="band">
-  <div class="wrap ai-grid">
-    <div class="copy-col">
-      <span class="eyebrow">AI search</span>
-      <h2>Your customers now ask ChatGPT what to buy</h2>
-      <p>More people skip the search results and ask an AI assistant directly. If your brand isn't in that answer, a competitor is. We cover both ways in.</p>
-      <ul class="check">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg><span><strong>ChatGPT Ads:</strong> paid placements beside relevant answers, run with the same ROAS discipline as Meta and Google.</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg><span><strong>GEO:</strong> structured data, answer-first content, reviews and mentions on sources AI models trust.</span></li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg><span><strong>SEO:</strong> the foundation both depend on, so Google and AI assistants can crawl and understand your site.</span></li>
-      </ul>
-    </div>
-    <div class="chat" aria-label="Illustration of an AI assistant conversation">
-      <div class="chat-top"><span>AI assistant</span><span>Illustration</span></div>
-      <div class="bubble q">Which clinic in Doha is good for laser hair removal with fast booking?</div>
-      <div class="bubble a">A few clinics come up often. <b>Your Clinic</b> is mentioned for <span class="hl">same-week appointments</span> and doctor-led sessions…</div>
-      <div class="sponsored"><small>SPONSORED</small><b>Your Clinic: Book a free consultation in Doha</b><span>Message on WhatsApp →</span></div>
-      <p class="chat-note">Example only. Shows where organic (GEO) and paid (ChatGPT Ads) visibility appear.</p>
-    </div>
-  </div>
-</section>
-
-<section id="process">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Process</span>
-      <h2>Four steps, each with a clear output</h2>
-    </div>
-    <div class="steps">
-      <div class="step"><h3>Audit</h3><p>Ad accounts, tracking, funnel and competitors reviewed. You get a list of leaks and opportunities.</p></div>
-      <div class="step"><h3>Track &amp; plan</h3><p>Tracking fixed first. Then budget split, audiences, offers, and agreed ROAS, CPA or CPL targets.</p></div>
-      <div class="step"><h3>Launch &amp; test</h3><p>Campaigns and creatives go live with structured tests to find winning hooks and offers fast.</p></div>
-      <div class="step"><h3>Scale</h3><p>More budget on winners, retargeting and upsell, then new channels or markets when the numbers allow.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="about" class="band">
-  <div class="wrap about">
-    <div class="sec-head" style="margin:0">
-      <span class="eyebrow">About us</span>
-      <h2>A paid ads company that builds systems, not campaigns</h2>
-      <div class="body">
-        <p><strong>Bulk Growth</strong> is a company specialized in paid advertising. We plan, run and scale ads on Meta, Google, TikTok, Snapchat, LinkedIn and ChatGPT for brands that want sales and leads they can measure.</p>
-        <p>We don't launch ads and hope. We build a full system around every account: the right tracking first, then a clear funnel, then campaigns that are tested and optimized every week. Tracking and optimization are the core of everything we do, because they decide whether an ad budget grows a business or burns it.</p>
-        <p>Since 2022 we've helped <strong>40+ brands</strong> across the GCC, Europe and the USA, and managed <strong>$10M in ad spend</strong>. Our clients include online stores, medical and aesthetic clinics, real estate developers, restaurants and cafés, hotels and travel companies, construction firms and SaaS platforms.</p>
-        <p>For them we've built full-funnel systems from first view to repeat purchase, set up tracking that connects every sale, lead and WhatsApp chat back to the ad that brought it, and scaled the winners. The results include return on ad spend up to 30x, 80% of real estate leads closed into deals, and 70,000+ patient conversations for clinics.</p>
-        <p>Bulk Growth is led by <strong>Mohamed Elmlegey</strong>, a senior media buyer and performance marketer who has managed paid media since 2022 and mentored teams of media buyers.</p>
-        <div class="facts" aria-label="Bulk Growth in numbers">
-          <div><b>40+</b><span>brands</span></div>
-          <div><b>$10M</b><span>ad spend managed</span></div>
-          <div><b>Up to 30x</b><span>ROAS</span></div>
-          <div><b>6</b><span>industries</span></div>
-        </div>
-        <p style="color:var(--text);font-weight:600">Where we work</p>
-        <div class="chips"><span class="chip">GCC</span><span class="chip">Europe</span><span class="chip">USA</span></div>
-        <p style="color:var(--text);font-weight:600">Tools</p>
-        <div class="chips"><span class="chip">GTM</span><span class="chip">GA4</span><span class="chip">Meta CAPI</span><span class="chip">Looker Studio</span><span class="chip">Clarity</span><span class="chip">Hotjar</span><span class="chip">CRM</span></div>
-      </div>
-    </div>
-    <ul class="why" aria-label="How Bulk Growth works">
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg><div><h3>Tracking first</h3><p>Every sale, lead and WhatsApp chat is tracked before we spend, so the platforms learn from real customers.</p></div></li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-3-6.7L21 8M21 3v5h-5"/></svg><div><h3>Constant optimization</h3><p>Budgets, audiences and creatives are reviewed every week. What works gets more money; what doesn't gets cut.</p></div></li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg><div><h3>Systems that scale</h3><p>A full funnel from first view to repeat purchase, so growth doesn't depend on one lucky ad.</p></div></li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M10 9l5 3-5 3z"/></svg><div><h3>Creative testing</h3><p>New hooks, offers and formats tested on a steady cycle to find the next winner before the current one tires.</p></div></li>
-      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 15v-3M12 15V9M17 15v-5"/></svg><div><h3>Transparent reporting</h3><p>Ad accounts and data stay in your name, with a live dashboard you can open any time.</p></div></li>
-    </ul>
-  </div>
-</section>
-
-<section id="faq">
-  <div class="wrap">
-    <div class="sec-head"><span class="eyebrow">FAQ</span><h2>Questions we hear a lot</h2></div>
-    <div class="faq">
-      <details open><summary>How do you track WhatsApp leads?</summary><p>We track every WhatsApp click, every conversation that actually starts, and which ad or campaign started it. When a chat turns into a real lead or a sale, that is sent back to Meta so your ads learn to bring more customers like that one.</p></details>
-      <details><summary>Why does tracking matter before running ads?</summary><p>Ad platforms optimize on the results you report to them. If sales, leads and WhatsApp chats are not tracked correctly, they optimize for clicks instead of customers. We connect your site, store, WhatsApp and app to Meta, Google, TikTok, Snapchat and GA4 first, so every campaign learns from real results.</p></details>
-      <details><summary>Can I advertise on ChatGPT?</summary><p>Yes, in the markets where OpenAI has opened ads. ChatGPT shows sponsored placements next to relevant answers. We set up and manage ChatGPT Ads and tell you upfront if your market isn't available yet.</p></details>
-      <details><summary>What is GEO, and how is it different from SEO?</summary><p>SEO helps your pages rank in Google results. GEO (Generative Engine Optimization) helps AI assistants like ChatGPT, Gemini, Perplexity and Google AI Overviews understand, trust and recommend your brand. The groundwork overlaps, so we run both together.</p></details>
-      <details><summary>Which industries do you work with?</summary><p>E-commerce and retail, medical and aesthetic clinics, real estate and construction, restaurants and cafes, tourism and hospitality, and SaaS.</p></details>
-      <details><summary>Which markets do you work in?</summary><p>Qatar, Saudi Arabia, the UAE, Kuwait and Egypt, plus campaigns in the USA, UK, Germany, France and other European countries, in English and Arabic.</p></details>
-      <details><summary>Who owns the ad accounts and the tracking setup?</summary><p>You do. Ad accounts, tracking and analytics stay in your business, and we work in them with access permissions.</p></details>
-      <details><summary>Do you work with international clients?</summary><p>Yes. We work remotely with brands in the GCC, Egypt, Europe and the USA, in English and Arabic. Communication runs on WhatsApp and video calls, and reporting is shared through a live dashboard.</p></details>
-      <details><summary>How do you measure success?</summary><p>We agree on business numbers before launch: return on ad spend and cost per purchase for online stores, cost per qualified lead and closed deals for lead generation. Clicks and reach are tracked, but they are not the goal.</p></details>
-      <details><summary>What happens in the $50 consultation?</summary><p>It is a 30-minute video call about your business. You answer a short form and pick a time in our calendar, we review your ads, funnel and tracking before the call, and in the call we show you the biggest problems costing you money and the quickest fixes. You get a short written summary afterwards.</p></details>
-      <details><summary>How do I pay for the consultation?</summary><p>After you pick a time in our calendar, we send you a secure invoice for $50 on WhatsApp. You can pay it by bank transfer in USD (ACH or wire) or EUR (SEPA) from anywhere. The call is booked once the payment arrives.</p></details>
-      <details><summary>How does pricing work?</summary><p>A monthly management fee based on ad spend, channels and services. Tracking setups are quoted as a one-time project. Message us on WhatsApp for a detailed quote.</p></details>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <div class="wrap grid">
-    <div class="info">
-      <span class="eyebrow">Contact</span>
-      <h2>Send us your link. We'll come back with a plan.</h2>
-      <p>WhatsApp is the fastest way to reach us. Or fill in the form and it opens WhatsApp with your details ready to send.</p>
-      <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="contact" data-loc="contact" style="justify-self:start">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>
-        Start a WhatsApp chat
-      </a>
-      <div class="contact-list">
-        <div><span class="lbl">WhatsApp</span><span class="js-phone">+20 104 066 6433</span><button class="copy" data-copy="phone" type="button">Copy</button></div>
-        <div><span class="lbl">Email</span><a class="js-email" href="mailto:mohamedelmlegey10@gmail.com" style="overflow-wrap:anywhere;color:inherit">mohamedelmlegey10@gmail.com</a><button class="copy" data-copy="email" type="button">Copy</button></div>
-        <div><span class="lbl">Based in</span><span class="js-address">Alexandria, Egypt · working remotely with clients worldwide</span></div>
-      </div>
-    </div>
-
-    <form id="leadForm" novalidate>
-      <div class="row2">
-        <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" required autocomplete="name"></div>
-        <div class="field"><label for="f-store">Website or page link</label><input id="f-store" name="store" placeholder="https://" autocomplete="url"></div>
-      </div>
-      <div class="row2">
-        <div class="field"><label for="f-ind">Business type</label>
-          <select id="f-ind" name="industry"><option>E-commerce</option><option>Clinic / medical</option><option>Real estate</option><option>Restaurant / cafe</option><option>Tourism / hotel</option><option>SaaS / app</option><option>Other</option></select></div>
-        <div class="field"><label for="f-market">Country</label>
-          <select id="f-market" name="market" class="js-countries"></select></div>
-      </div>
-      <div class="row2">
-        <div class="field"><label for="f-budget">Monthly ad budget (USD)</label>
-          <select id="f-budget" name="budget" class="js-budget"></select></div>
-        <div class="field"><label for="f-svc">Interested in</label>
-          <select id="f-svc" name="svc"><option>Paid ads</option><option>Tracking setup (GTM)</option><option>ChatGPT Ads</option><option>SEO &amp; GEO</option><option>Content &amp; page management</option><option>Full growth package</option></select></div>
-      </div>
-      <div class="field"><label for="f-msg">What do you need help with?</label><textarea id="f-msg" name="msg" placeholder="e.g. Lower my cost per lead on Meta and track WhatsApp chats properly"></textarea></div>
-      <p class="err" id="formErr" hidden>Add your name so we know who to reply to.</p>
-      <button class="btn btn-wa" type="submit"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Send via WhatsApp</button>
-      <p class="form-hint">This form doesn't store your data on a server. It opens WhatsApp with your message, and you press send.</p>
-    </form>
-  </div>
-</section>
 </main>
+
+<section id="cta-end" class="band">
+  <div class="wrap end-cta">
+    <div><span class="eyebrow">Ready when you are</span><h2>Find out where your ads are losing money</h2><p>Book a 30-minute consultation, or send your link on WhatsApp and we'll reply with first ideas.</p></div>
+    <div class="ctas"><a href="/consultation/" class="btn btn-primary">Book consultation · $50</a>
+      <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="contact" data-loc="cta_end"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Chat on WhatsApp</a></div>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
@@ -1269,7 +858,7 @@ body{top:0!important}
       </div>
       <div>
         <h4>Company</h4>
-        <ul><li><a href="#results">Case studies</a></li><li><a href="#process">Process</a></li><li><a href="/about/">About us</a></li><li><a href="#faq">FAQ</a></li></ul>
+        <ul><li><a href="/case-studies/">Case studies</a></li><li><a href="/how-we-work/">How we work</a></li><li><a href="/growth-strategy/">Growth strategy</a></li><li><a href="/about/">About us</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/contact/">Contact</a></li></ul>
       </div>
       <div>
         <h4>Get in touch</h4>
@@ -1281,7 +870,7 @@ body{top:0!important}
         </ul>
       </div>
     </div>
-    <div class="legal"><span>© <span id="yr"></span> Bulk Growth. All rights reserved.</span><span>Performance · Tracking · Growth</span></div>
+    <div class="legal"><span>© <span id="yr"></span> Bulk Growth. All rights reserved.</span><span class="legal-links"><a href="/terms/">Terms of service</a><a href="/refund-policy/">Refund policy</a><a href="/privacy/">Privacy policy</a></span></div>
   </div>
 </footer>
 
@@ -1296,7 +885,7 @@ body{top:0!important}
     <p class="help-sub">What you get</p>
     <ul class="ticks"><li>Campaigns across Meta, Google, TikTok, Snapchat and LinkedIn</li><li>Weekly optimization and creative testing</li><li>A monthly report on cost per result and ROAS</li></ul>
     <div class="help-cta">
-      <a href="#consult" class="btn btn-primary" data-close>Book a $50 consultation</a>
+      <a href="/consultation/" class="btn btn-primary" data-close>Book a $50 consultation</a>
       <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="default" data-topic="Performance marketing" data-loc="help_perf"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Ask about Performance marketing</a>
     </div>
   </div>
@@ -1312,7 +901,7 @@ body{top:0!important}
     <p class="help-sub">What you get</p>
     <ul class="ticks"><li>A clean, well-structured ad account</li><li>Lower cost per purchase or per lead</li><li>WhatsApp and Messenger campaigns that turn into bookings</li></ul>
     <div class="help-cta">
-      <a href="#consult" class="btn btn-primary" data-close>Book a $50 consultation</a>
+      <a href="/consultation/" class="btn btn-primary" data-close>Book a $50 consultation</a>
       <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="default" data-topic="Meta Ads" data-loc="help_meta"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Ask about Meta Ads</a>
     </div>
   </div>
@@ -1328,7 +917,7 @@ body{top:0!important}
     <p class="help-sub">What you get</p>
     <ul class="ticks"><li>Search, Shopping, Performance Max and YouTube campaigns</li><li>Negative keyword lists that stop wasted spend</li><li>Conversions tracked to sales and calls</li></ul>
     <div class="help-cta">
-      <a href="#consult" class="btn btn-primary" data-close>Book a $50 consultation</a>
+      <a href="/consultation/" class="btn btn-primary" data-close>Book a $50 consultation</a>
       <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="default" data-topic="Google Ads" data-loc="help_google"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Ask about Google Ads</a>
     </div>
   </div>
@@ -1344,7 +933,7 @@ body{top:0!important}
     <p class="help-sub">What you get</p>
     <ul class="ticks"><li>TikTok and Snapchat campaigns built for your market</li><li>Creative briefs and hooks for each test</li><li>Purchases and leads tracked back to each ad</li></ul>
     <div class="help-cta">
-      <a href="#consult" class="btn btn-primary" data-close>Book a $50 consultation</a>
+      <a href="/consultation/" class="btn btn-primary" data-close>Book a $50 consultation</a>
       <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="default" data-topic="TikTok &amp; Snapchat Ads" data-loc="help_social"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Ask about TikTok &amp; Snapchat Ads</a>
     </div>
   </div>
@@ -1360,7 +949,7 @@ body{top:0!important}
     <p class="help-sub">What you get</p>
     <ul class="ticks"><li>Campaigns aimed at decision-makers</li><li>Qualified lead forms</li><li>Cost per qualified lead, not just cost per lead</li></ul>
     <div class="help-cta">
-      <a href="#consult" class="btn btn-primary" data-close>Book a $50 consultation</a>
+      <a href="/consultation/" class="btn btn-primary" data-close>Book a $50 consultation</a>
       <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="default" data-topic="LinkedIn Ads" data-loc="help_linkedin"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Ask about LinkedIn Ads</a>
     </div>
   </div>
@@ -1376,7 +965,7 @@ body{top:0!important}
     <p class="help-sub">What you get</p>
     <ul class="ticks"><li>ChatGPT ad campaigns where available</li><li>Tracking for ChatGPT traffic and sales</li><li>An honest view of whether it beats your other channels</li></ul>
     <div class="help-cta">
-      <a href="#consult" class="btn btn-primary" data-close>Book a $50 consultation</a>
+      <a href="/consultation/" class="btn btn-primary" data-close>Book a $50 consultation</a>
       <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="default" data-topic="ChatGPT Ads" data-loc="help_chatgpt"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Ask about ChatGPT Ads</a>
     </div>
   </div>
@@ -1392,7 +981,7 @@ body{top:0!important}
     <p class="help-sub">What you get</p>
     <ul class="ticks"><li>Technical fixes and a keyword map</li><li>Optimized pages that convert visitors</li><li>Monthly ranking and lead report</li></ul>
     <div class="help-cta">
-      <a href="#consult" class="btn btn-primary" data-close>Book a $50 consultation</a>
+      <a href="/consultation/" class="btn btn-primary" data-close>Book a $50 consultation</a>
       <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="default" data-topic="SEO" data-loc="help_seo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Ask about SEO</a>
     </div>
   </div>
@@ -1408,7 +997,7 @@ body{top:0!important}
     <p class="help-sub">What you get</p>
     <ul class="ticks"><li>A baseline of where you appear in AI answers</li><li>Content and structured data AI tools can cite</li><li>Monthly AI visibility checks</li></ul>
     <div class="help-cta">
-      <a href="#consult" class="btn btn-primary" data-close>Book a $50 consultation</a>
+      <a href="/consultation/" class="btn btn-primary" data-close>Book a $50 consultation</a>
       <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="default" data-topic="GEO" data-loc="help_geo"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Ask about GEO</a>
     </div>
   </div>
@@ -1424,7 +1013,7 @@ body{top:0!important}
     <p class="help-sub">What you get</p>
     <ul class="ticks"><li>A full tracking setup in your own accounts</li><li>WhatsApp and lead tracking back to each ad</li><li>A live Looker Studio dashboard</li></ul>
     <div class="help-cta">
-      <a href="#consult" class="btn btn-primary" data-close>Book a $50 consultation</a>
+      <a href="/consultation/" class="btn btn-primary" data-close>Book a $50 consultation</a>
       <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="default" data-topic="Tracking &amp; analytics" data-loc="help_tracking"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Ask about Tracking &amp; analytics</a>
     </div>
   </div>
@@ -1440,7 +1029,7 @@ body{top:0!important}
     <p class="help-sub">What you get</p>
     <ul class="ticks"><li>Product, restaurant and real estate shoots</li><li>Reels, short videos and commercials</li><li>Ad-ready cuts for every platform</li></ul>
     <div class="help-cta">
-      <a href="#consult" class="btn btn-primary" data-close>Book a $50 consultation</a>
+      <a href="/consultation/" class="btn btn-primary" data-close>Book a $50 consultation</a>
       <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="default" data-topic="Media production" data-loc="help_production"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Ask about Media production</a>
     </div>
   </div>
@@ -1456,7 +1045,7 @@ body{top:0!important}
     <p class="help-sub">What you get</p>
     <ul class="ticks"><li>Social posts and stories</li><li>Ad creatives in every size</li><li>Branding design</li></ul>
     <div class="help-cta">
-      <a href="#consult" class="btn btn-primary" data-close>Book a $50 consultation</a>
+      <a href="/consultation/" class="btn btn-primary" data-close>Book a $50 consultation</a>
       <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="default" data-topic="Design" data-loc="help_design"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Ask about Design</a>
     </div>
   </div>
@@ -1472,7 +1061,7 @@ body{top:0!important}
     <p class="help-sub">What you get</p>
     <ul class="ticks"><li>Monthly content calendar</li><li>Daily publishing and community management</li><li>Monthly report</li></ul>
     <div class="help-cta">
-      <a href="#consult" class="btn btn-primary" data-close>Book a $50 consultation</a>
+      <a href="/consultation/" class="btn btn-primary" data-close>Book a $50 consultation</a>
       <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="default" data-topic="Page management" data-loc="help_pages"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Ask about Page management</a>
     </div>
   </div>
@@ -1488,7 +1077,7 @@ body{top:0!important}
     <p class="help-sub">What you get</p>
     <ul class="ticks"><li>Market and competitor research</li><li>Buyer personas and offer positioning</li><li>A full-funnel plan with targets</li></ul>
     <div class="help-cta">
-      <a href="#consult" class="btn btn-primary" data-close>Book a $50 consultation</a>
+      <a href="/consultation/" class="btn btn-primary" data-close>Book a $50 consultation</a>
       <a class="btn btn-wa js-wa" href="https://wa.me/201040666433" target="_blank" rel="noopener" data-msg="default" data-topic="Strategy" data-loc="help_strategy"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Ask about Strategy</a>
     </div>
   </div>
@@ -1607,7 +1196,7 @@ document.querySelectorAll("dialog.help").forEach(d => {
 
 /* --- consultation form → dataLayer → Cal.com booking (answers prefilled) --- */
 const CAL_URL = "https://cal.com/bulkgrowth/consultation";
-document.getElementById("consultForm").addEventListener("submit", e => {
+document.getElementById("consultForm") && document.getElementById("consultForm").addEventListener("submit", e => {
   e.preventDefault();
   const f = e.target, F = n => f.elements.namedItem(n), V = n => ((F(n) && F(n).value) || "").trim(), err = document.getElementById("consultErr");
   const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(V("email"));
@@ -1642,8 +1231,8 @@ document.getElementById("consultForm").addEventListener("submit", e => {
 /* lead form → dataLayer generate_lead → WhatsApp */
 const form = document.getElementById("leadForm");
 let started = false;
-form.addEventListener("input", () => { if (!started) { started = true; track("form_start", { form_id: "contact_form" }); } });
-form.addEventListener("submit", e => {
+if (form) form.addEventListener("input", () => { if (!started) { started = true; track("form_start", { form_id: "contact_form" }); } });
+if (form) form.addEventListener("submit", e => {
   e.preventDefault();
   const f = e.target, F = n => f.elements.namedItem(n), V = n => ((F(n) && F(n).value) || "").trim(), err = document.getElementById("formErr");
   if (!V("name")) { err.hidden = false; F("name").focus(); return; }
@@ -1670,7 +1259,7 @@ form.addEventListener("submit", e => {
 
 /* hero particle field — hexagons stream up and right, like the logo's particle growth */
 (function(){
-  const c = document.getElementById("hex"), ctx = c.getContext("2d");
+  const c = document.getElementById("hex"); if (!c) return; const ctx = c.getContext("2d");
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
   let w, h, dpr, parts = [];
   function size(){
