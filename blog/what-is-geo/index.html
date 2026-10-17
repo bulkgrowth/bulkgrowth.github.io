@@ -29,7 +29,7 @@
 <body>
 <header>
   <nav class="wrap nav" aria-label="Main navigation">
-    <a href="/" class="brand" aria-label="Bulk Growth home"><img src="/images/bulk-growth-logo.webp" alt="Bulk Growth" width="182" height="42"></a>
+    <a href="/" class="brand notranslate" aria-label="Bulk Growth home"><img src="/images/bulk-growth-logo.webp" alt="Bulk Growth" width="182" height="42"></a>
     <ul class="links" id="links">
       <li><a href="/services/">Services</a></li>
       <li><a href="/industries/">Industries</a></li>
@@ -46,6 +46,7 @@
       <li><a href="/#faq">FAQ</a></li>
     </ul>
     <div style="display:flex;gap:.6rem;align-items:center">
+      <div class="lang" data-lang-slot></div>
       <a href="/#consult" class="btn btn-primary">Book consultation · $50</a>
       <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="links"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     </div>
@@ -160,5 +161,6 @@ document.addEventListener("click",function(e){document.querySelectorAll(".sub.op
   })});
 })();
 </script>
+<script src="/assets/lang.js" defer></script>
 </body>
 </html>

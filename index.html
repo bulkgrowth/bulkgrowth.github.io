@@ -710,6 +710,31 @@ footer{border-top:1px solid var(--line);padding-block:3rem 2rem}
 .gallery.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media (max-width:900px){.gallery.g3{grid-template-columns:1fr 1fr}}@media (max-width:600px){.gallery.g3{grid-template-columns:1fr}}
 .shot figcaption a{color:var(--lime)}
+.lang{position:relative}
+.lang-btn{display:inline-flex;align-items:center;gap:.4rem;height:42px;padding:0 .75rem;border:1px solid var(--line);border-radius:8px;background:none;color:var(--text);font:inherit;font-size:.82rem;font-weight:600;letter-spacing:.04em;cursor:pointer}
+.lang-btn:hover,.lang-btn[aria-expanded="true"]{border-color:var(--lime);color:var(--lime)}
+.lang-panel{position:absolute;right:0;top:calc(100% + .7rem);width:min(420px,92vw);background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:0 24px 60px -12px rgba(0,0,0,.7);padding:1rem;z-index:80}
+.lang-panel[hidden]{display:none}
+.lang-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:.7rem}
+.lang-x{background:none;border:0;color:var(--muted);font-size:1.5rem;line-height:1;cursor:pointer}
+.lang-q{width:100%;font:inherit;font-size:.95rem;padding:.65rem .8rem;border-radius:10px;border:1px solid var(--line);background:var(--ink);color:var(--text);margin-bottom:.7rem}
+.lang-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:.35rem;max-height:min(52vh,420px);overflow:auto}
+.lang-list button{width:100%;text-align:start;background:none;border:1px solid transparent;border-radius:9px;padding:.5rem .6rem;color:var(--text);cursor:pointer;font:inherit}
+.lang-list button:hover{background:color-mix(in srgb,var(--lime) 9%,transparent)}
+.lang-list button.on{border-color:var(--lime)}
+.lang-list b{display:block;font-size:.93rem;font-weight:600}
+.lang-list small{color:var(--muted);font-size:.75rem}
+.lang-note{color:var(--muted);font-size:.75rem;margin:.7rem 0 0}
+@media (max-width:600px){.lang-panel{position:fixed;left:12px;right:12px;top:72px;width:auto}.lang-btn span{display:none}.lang-btn{padding:0 .65rem}}
+body{top:0!important}
+.goog-te-banner-frame,iframe.skiptranslate,.skiptranslate>iframe,#goog-gt-tt,.goog-te-balloon-frame,.VIpgJd-ZVi9od-ORHb-OEVmcd,.VIpgJd-ZVi9od-aZ2wEe-wOHMyf,.VIpgJd-yAWNEb-L7lbkb{display:none!important}
+.goog-text-highlight,font[style]{background:none!important;box-shadow:none!important}
+[dir="rtl"] .eyebrow::before{order:2}
+[dir="rtl"] .ticks li,[dir="rtl"] .prose ul,[dir="rtl"] .prose ol{text-align:right}
+[dir="rtl"] .lang-panel{right:auto;left:0}
+[dir="rtl"] .prose .answer{border-left:0;border-right:3px solid var(--lime);border-radius:12px 0 0 12px}
+[dir="rtl"] .sub{left:auto;right:-1rem}
+[dir="rtl"] .kpi b,[dir="rtl"] .cbig,[dir="rtl"] .case .big,[dir="rtl"] .tally b,[dir="rtl"] .ba-chg,[dir="rtl"] .ba-row b,[dir="rtl"] .price b,[dir="rtl"] td{unicode-bidi:plaintext}
 </style>
 </head>
 <body>
@@ -718,7 +743,7 @@ footer{border-top:1px solid var(--line);padding-block:3rem 2rem}
 <a class="topbar" href="#consult"><b>New:</b> 30-minute growth consultation for <b>$50</b>. Find out where your ads are losing money. <span>Book now →</span></a>
 <header>
   <nav class="wrap nav" aria-label="Main navigation">
-    <a href="#top" class="brand" aria-label="Bulk Growth home">
+    <a href="#top" class="brand notranslate" aria-label="Bulk Growth home">
       <img src="/images/bulk-growth-logo.webp" alt="Bulk Growth" width="182" height="42" decoding="async">
     </a>
     <ul class="links" id="links">
@@ -740,6 +765,7 @@ footer{border-top:1px solid var(--line);padding-block:3rem 2rem}
       <li><a href="/blog/">Blog</a></li>
     </ul>
     <div style="display:flex;gap:.6rem;align-items:center">
+      <div class="lang" data-lang-slot></div>
       <a href="#consult" class="btn btn-primary">Book consultation · $50</a>
       <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="links">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -1646,6 +1672,7 @@ form.addEventListener("submit", e => {
   size(); draw(); wake();
 })();
 </script>
+<script src="/assets/lang.js" defer></script>
 
 </body>
 </html>
